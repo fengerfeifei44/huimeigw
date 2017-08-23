@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		button{
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<button >click</button>
+	<input type="tel" name="" id="a" value="" />
+</body>
+<script src="http://static.huimei.net/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script>
+	$(function(){
+		$("button").click(function(){
+			var i=10;
+			
+			var t=setInterval(function(){
+				$("button").css("background","gray");
+		    $("button").css("color","white")
+				i=i-1;
+				$("button").html(i)
+				if(i==0){
+					clearInterval(t)
+				}
+			},1000)
+			if(!(/^1[34578]\d{9}$/.test($("#a").val()))){
+				alert("a")
+			}
+			
+		})
+	
+	})
+	
+</script>
+</html>

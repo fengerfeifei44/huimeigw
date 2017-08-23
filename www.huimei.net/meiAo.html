@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+
+			<meta charset="UTF-8">
+			<title></title>
+			<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+
+		<title>梅奥峰会</title>
+		<link rel="stylesheet" type="text/css" href="../static/net/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/net/css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/net/css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/net/css/news.css"/>
+		<link rel="shortcut icon" href="../static/net/img/favicon.ico" type="image/x-icon"/> 
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../static/net/css/nav.css">
+		<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../static/net/js/tpl.js"></script>-->
+	</head>
+	<body>
+		<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">-->
+		<!--<link rel="stylesheet" type="text/css" href="../../static/net/css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/net/css/reset.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../static/net/css/login.css"/>
+		<!--		<link rel="shortcut icon" href="../static/net/img/logotop.ico" /> -->
+		<style type="text/css">
+			.header {
+				height: 40px;
+			}
+			
+			.box {
+				width: 400px;
+				height: 400px;
+				background: yellow;
+				position: absolute;
+				display: none;
+				left: 600px;
+				z-index: 100000;
+				color: ga;
+			}
+			
+			.cover {
+				display: none;
+				background: black;
+				opacity: 0.6;
+				width: 100%;
+				position: absolute;
+			}
+			.input-group select {
+				width: 245px;
+			}
+			.forlogin{
+				padding-left: 69px;
+			}
+			.submiter {
+	background: #3597FF;
+}
+
+.submiter:hover {
+	background: #3B6DA7;
+}
+		</style>
+		<style>
+			<!-- input[type="checkbox"] {
+				display: none;
+			}
+			
+			input[type="checkbox"]+label {
+				cursor: pointer;
+				font-size: 1em;
+			}
+			/* ==================================================================== */
+			/* CHECKBOX TYPE 7 ---------------------------------------------------- */
+			/* ==================================================================== */
+			
+			[id^="checkbox-7-"]+label {
+				background-color: #FFF;
+				padding: 6px 9px 8px 43px;
+				border-radius: 0px;
+				display: inline-block;
+				position: relative;
+				margin-left: 0px;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+				height: 20px;
+				width: 180px;
+				overflow: hidden;
+				font-size: 1em !important;
+				color: #464E50;
+				-webkit-transition: all 0.3s linear, color 0 linear;
+				transition: all 0.3s linear, color 0 linear;
+				margin-top: 4px;
+			}
+			
+			[id^="checkbox-7-"]+label:after {
+				content: ' ';
+				position: absolute;
+				background: #FFF;
+				top: 8px;
+				left: 8px;
+				width: 16px;
+				display: block;
+				font-size: 1em !important;
+				height: 10px;
+				border-radius: 0px;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+				padding: 4px 0px;
+				text-align: center;
+				color: #496F7A;
+				line-height: 10px;
+				vertical-align: middle;
+			}
+			
+			[id^="checkbox-7-"]:checked+label {
+				color: #fff;
+			}
+			
+			[id^="checkbox-7-"]+label>span {
+				position: relative;
+				z-index: 99999;
+				font-family: 'adelle-sans', sans-serif;
+			}
+			
+			[id^="checkbox-7-"]:active+label:after {
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(0, 0, 0, 0.1), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+			}
+			
+			[id^="checkbox-7-"]:checked+label:after {
+				content: '\2715';
+			}
+			
+			[id^="checkbox-7-"]+label:before {
+				content: ' ';
+				position: absolute;
+				background: #6AC6DD;
+				width: 0%;
+				height: 100%;
+				top: 0;
+				-webkit-transition: all 0.3s ease-in;
+				transition: all 0.3s ease-in;
+				left: 0;
+			}
+			
+			[id^="checkbox-7-"]:checked+label:before {
+				content: ' ';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+				top: 0;
+				left: 0;
+			}
+			
+			.valid-err span,
+			span.error {
+				color: #E24A4A;
+				font-size: 12px;
+				display: inline-block;
+				margin-left: 5px;
+				line-height: 27px;
+			}
+			
+			.regpanel {
+				display: none;
+				width: 580px;
+				padding: 50px 70px;
+				margin-left: -315px;
+				margin-top: -250px;
+			}
+			
+			.wechat {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				text-align: right;
+				font-size: 12px;
+				line-height: 18px;
+				color: #727272;
+				z-index: 100;
+			}
+			
+			.favors {
+				position: absolute;
+				right: 0px;
+				bottom: 40px;
+				text-align: left;
+				font-size: 14px;
+				line-height: 18px;
+				color: #727272;
+				z-index: 100;
+			}
+			
+			-->
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="login">
+			<div class="login_main">
+				<p class="xx">登录</p>
+			</div>
+
+	</div>-->
+		<div class="header" style="height: 80px">
+			<div class="top-box" id="header">
+				<a href="http://www.huimei.net/"><img class="h-logo" src="../static/temp_files/h_logo.png" alt=""></a>
+				<ul class="h-nav">
+					<li><a href="../www.huimei.net/index.html">首页</a><i class="i-line"></i></li>
+					<li><a href="../www.huimei.net/hm-health.html">惠每医疗集团</a><i class="i-line"></i></li>
+					<!--<li><a href="http://www.huimei.com/pages/clinicalpolicy.html"></a><i class="i-line">/</i></li>-->
+					<li><a href="../www.huimei.net/news.html">新闻中心</a><i class="i-line"></i></li>
+					<li><a href="../www.huimei.net/product_service.html">产品与服务</a><i class="i-line"></i></li>
+					<!--       <li><a href="http://www.huimei.com/pages/aboutUs.html">关于我们</a><i class="i-line">/</i></li>
+                           <li><a href="http://www.huimei.com/pages/contactWe.html">联系我们</a></li>-->
+					<!--<li>&lt;!&ndash;<span class="s-yuan"><i class="glyphicon glyphicon-user i-icon"></i></span>&ndash;&gt;<a class="loginbtn">登录</a><i class="ic-line"></i><a class="regbtn">注册</a></li>-->
+                    <li class="login_in">
+                        <a class="loginbtn">登录</a>
+                    </li>
+                    <li class="split login_in">|</li>
+                    <li  class="login_in">
+                        <a class="regbtn">注册</a>
+                    </li>
+                    <li  class="login_in" style="display: none">
+                        <a class="quick" >退出</a>
+                    </li>
+				</ul>
+
+			</div>
+			<div class="window loginpanel" style="display: none">
+				<h3>登录</h3>
+				<a class="closebtn"></a>
+				<form id="loginForm" class="form" method="post">
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-tel"></i><input type="text" name="phone" required="required" placeholder="输入手机号" />
+					</div>
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-lock"></i><input type="password" placeholder="输入6位数字密码" name="password" required="required" />
+					</div>
+					<p class="err-msg"></p>
+					<button type="button" class="button submiter">登&nbsp;&nbsp;录</button>
+					<a class="forreg">没有账号，现在注册</a>
+					<a class="forreg" href="forget_password.html">忘记密码</a>
+				</form>
+			</div>
+			<div class="window regpanel"  style="display: none;">
+				<h3>注册</h3>
+				<a class="closebtn"></a>
+
+				<form id="regForm" class="form nice-validator n-default" novalidate="novalidate" method="post">
+
+					<div class="wechat">
+						<img src="../static/img/f_ewm_01.png" alt="" />
+						<p>关注微信公众账号</p>
+						<p>第一时间获取惠每医疗资讯</p>
+					</div>
+
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-tel"></i><input type="text" name="phone" placeholder="输入手机号" minlength="11" maxlength="11" />
+						<br/>
+					</div>
+					<div class="input-group code">
+						<input type="text" name="securityCode" placeholder="验证码" minlength="6" maxlength="6" />
+						<button type="button" class="getcode">发送验证码</button>
+					</div>
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-lock"></i><input type="password" name="password" placeholder="请输入6位数字密码" minlength="6" maxlength="12" />
+					</div>
+					<div class="input-group ">
+						<i class="icon icon-s "></i><input type="password" name="repwd" placeholder="请确认6位数字密码" minlength="6" maxlength="12" />
+					</div>
+
+					<div class="input-group add-on mt-l">
+						<i class="icon icon-s icon-user"></i>
+						<input type="text" placeholder="姓名" name="realName" />
+					</div>
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-mail"></i>
+						<input type="text" placeholder="输入邮箱" name="email" />
+					</div>
+					<div class="input-group ">
+						<select name="roleId" id="" placeholder="请选择您的职业">
+							<option value="请选择您的职业">请选择您的职业</option>
+							<option value="1">医生</option>
+							<option value="2">护士</option>
+							<option value="3">医学生</option>
+							<option value="4">医药领域管理者</option>
+							<option value="100">其他</option>
+						</select>
+					</div>
+
+					<div class="favors">
+						<fieldset style="    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;">
+							<legend align="center" style="font-size: 14px;color: #727272">您感兴趣的服务</legend>
+							<input type="checkbox" id="checkbox-7-1" name="favor" value="健康通讯"><label for="checkbox-7-1"><span>Mayo Clinic 健康通讯 </span></label> <br/>
+							<input type="checkbox" id="checkbox-7-2" name="favor" value="转诊信息"><label for="checkbox-7-2"><span>Mayo Clinic 转诊信息  </span></label> <br/>
+							<input type="checkbox" id="checkbox-7-3" name="favor" value="健康资讯"><label for="checkbox-7-3"><span>Mayo Clinic 健康资讯  </span></label> <br/>
+							<input type="checkbox" id="checkbox-7-4" name="favor" value="国际研讨会"><label for="checkbox-7-4"><span>Mayo Clinic 国际研讨会</span></label>
+						</fieldset>
+					</div>
+
+					<button type="submit" class="button submit">注&nbsp;&nbsp;册</button>
+					<a class="forlogin">我有账号，直接登录</a>
+				</form>
+			</div>
+		</div>
+		<!--<div class="headers">
+			<div class="containers">
+				<a href="/index">
+					<div class="logo">
+						
+					</div>
+				</a>
+				<div class="links">
+					<ul>
+						<li>
+							<a class="loginbtn">登录</a>
+						</li>
+						<li class="split">|</li>
+						<li>
+							<a class="regbtn">注册</a>
+						</li>
+						<li>
+							<a class="quick" style="display: none;">退出</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="window loginpanel">
+			<h3>登录</h3>
+			<a class="closebtn"></a>
+			<form id="loginForm" class="form" method="post">
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-tel"></i><input type="text" name="phone" required="required" placeholder="输入手机号" />
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-lock"></i><input type="password" placeholder="输入6位数字密码" name="password" required="required" />
+				</div>
+				<p class="err-msg"></p>
+				<button type="button" class="button submiter">登&nbsp;&nbsp;录</button>
+				<a class="forreg">没有账号，现在注册</a>
+				<a class="forreg" href="forget_password.html">忘记密码</a>
+			</form>
+		</div>
+		<div class="window regpanel">
+			<h3>注册</h3>
+			<a class="closebtn"></a>
+
+			<form id="regForm" class="form"  method="post">
+
+				<div class="wechat">
+					<img src="../static/hm-office/images/pc/qrcode.jpg" alt="" />
+					<p>关注微信公众账号</p>
+					<p>第一时间获取惠每医疗资讯</p>
+				</div>
+
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-tel"></i><input type="text" name="phone" placeholder="输入手机号" minlength="11" maxlength="11" />
+					<br/>
+				</div>
+				<div class="input-group code">
+					<input type="text" name="securityCode" placeholder="验证码" minlength="6" maxlength="6" />
+					<button type="button" class="getcode">发送验证码</button>
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-lock"></i><input type="password" name="password" placeholder="请输入6位数字密码" minlength="6" maxlength="12" />
+				</div>
+				<div class="input-group ">
+					<i class="icon icon-s "></i><input type="password" name="repwd" placeholder="请确认6位数字密码" minlength="6" maxlength="12" />
+				</div>
+
+				<div class="input-group add-on mt-l">
+					<i class="icon icon-s icon-user"></i>
+					<input type="text" placeholder="姓名" name="realName" />
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-mail"></i>
+					<input type="text" placeholder="输入邮箱" name="email" />
+				</div>
+				<div class="input-group ">
+					<select name="roleId" id="" placeholder="请选择您的职业">
+						<option value="请选择您的职业">请选择您的职业</option>
+						<option value="1">医生</option>
+						<option value="2">护士</option>
+						<option value="3">医学生</option>
+						<option value="4">医药领域管理者</option>
+						<option value="100">其他</option>
+					</select>
+				</div>
+
+				<div class="favors">
+					<fieldset>
+						<legend align="center">您感兴趣的服务</legend>
+						<input type="checkbox" id="checkbox-7-1" name="favor" value="健康通讯"><label for="checkbox-7-1"><span>Mayo Clinic 健康通讯 </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-2" name="favor" value="转诊信息"><label for="checkbox-7-2"><span>Mayo Clinic 转诊信息  </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-3" name="favor" value="健康资讯"><label for="checkbox-7-3"><span>Mayo Clinic 健康资讯  </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-4" name="favor" value="国际研讨会"><label for="checkbox-7-4"><span>Mayo Clinic 国际研讨会</span></label>
+					</fieldset>
+				</div>
+
+				<button type="submit" class="button submit">注&nbsp;&nbsp;册</button>
+				<a class="forlogin">我有账号，直接登录</a>
+			</form>
+		</div>-->
+		<!--<div class="index_nav">
+
+			<div class="index_logo">
+				<a href="index.html"><img src="../static/net/img/logo.jpg" alt="惠每医疗 Logo"></a>
+			</div>
+			<ul>
+				<a href="index.html">
+					<li>
+						<p>首页</p>
+					</li>
+				</a>
+				&lt;!&ndash;<a href="http://amc.huimei.net/">
+					<li>
+						<p>智能问诊</p>
+					</li>
+				</a>&ndash;&gt;
+				<a href="hm-health.html">
+					<li class="a" style="position: relative;">
+						<p>惠每医疗集团</p>
+						&lt;!&ndash;<div class="hm_group">
+							<div>集团构架</div>
+							<div>产品与服务</div>
+						</div>&ndash;&gt;
+					</li>
+				</a>
+				<a href="news.html">
+					<li>
+						<p>新闻中心</p>
+					</li>
+				</a>
+				<a href="product_service.html">
+					<li>
+						<p>产品与服务</p>
+					</li>
+				</a>
+				&lt;!&ndash;<a href="contact.html">
+					<li>
+						<p>联系我们</p>
+					</li>
+				</a>&ndash;&gt;
+			</ul>
+		</div>-->
+		<div class="index_telnav">
+			<div><img src="../static/net/img/logo.jpg" /></div>
+			<div id="list"><img src="../static/net/img/caidan_c.png" /></div>
+		</div>
+		<div class="telnav_list">
+			<ul>
+				<a href="index.html">
+					<li>首页</li>
+				</a>
+				<a href="hm-health.html">
+					<li>惠每医疗集团</li>
+				</a>
+				<a href="news.html">
+					<li>新闻中心</li>
+				</a>
+				<a href="product_service.html">
+					<li>产品与服务</li>
+				</a>
+				<!--<a href="contact.html">
+					<li>联系我们</li>
+				</a>-->
+			</ul>
+		</div>
+	</body>
+	<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#list").click(function() {
+				$(".telnav_list").slideToggle(500)
+
+			})
+		})
+	</script>
+
+
+<script src="../static/net/js/slider.min.js"></script>
+<script src="../static/net/js/combo.select.js"></script>
+<script src="../static/net/js/validator.js"></script>
+<script src="../static/net/js/zh_CN.js"></script>
+<script src="../static/net/js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/net/js/pd.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="../static/net/css/add.css">
+</html>
+		<div class="new_nav marginTop80">
+			<img src="../static/net/img/3-lunbo.jpg"/>
+		</div>
+		<div id="meiAo">
+		<div class="wrapp">
+			<p>2017年8月7日，梅奥医疗集团（MayoClinic）再次以高分蝉联2017—2018年度“全美最佳医院”殊荣。在美国医疗环境日益复杂、医疗风险不断增加的困境下，梅奥医疗集团究竟如何屡破重围，成长为全美最璀璨的医疗巨星？</p>
+			<p>一直被模仿，从未被超越。作为一所历史悠久的综合全科医学中心，经典的梅奥模式值得全世界的医疗机构借鉴。</p>
+			<p>在梅奥,<strong>以患者为中心和团队协作始终是其至高无上的核心价值观，不曾改变。</strong></p>
+			<p>梅奥始终把患者需求放在首位。医护人员均会耐心听取完患者意见后再为其提供最优质、高效的综合评估和治疗。如需转诊，接诊医生也会全程服务，这种耐心、连贯的服务方式大大提高了患者的忠诚度。</p>
+			<p>梅奥有一个著名的信条，即“没有一个人可以离开他人而强大独立地存在”，这就是梅奥团队协作的理念。梅奥不会注重明星医生的打造，甚至会有意淡化医生个人的作用，他们强调团队同舟共济，协同服务，做到真正的多学科整合。</p>
+			<p>与此同时，<strong>梅奥还重视科教研相结合的创新型发展模式、患者获益、品牌建设、技术创新等</strong>，在上述先进理念的指引下，多年来梅奥的综合成绩稳居业界翘楚。</p>
+			<p>相比于梅奥，我国全科医学的现状依然十分严峻。目前随着政策的利好，以全科医生为重点的基层医疗卫生人才培养计划被提上重点日程。与此同时，北京的繁华地带也悄悄涌现出大量中高端全科诊所，这种西方国家的基层医疗单元，正在改头换面占领着中国的一线城市……</p>
+			<p><strong>2016年11月，第一届北医-梅奥全科医学论坛在北京大学医学部圆满举办，</strong>来自梅奥的顶级教授向中国全面展示了其近乎完美的全科医学模式。<strong>时隔1年，第二届北医-梅奥全科医学发展论坛将再创新高</strong>，在国家医改新政日益深化之际，梅奥与中国基层医疗将会产生何种奇妙的化学反应？如何借力国外顶级品牌创建中国本土化优质全科诊所？金秋9月，我们在北京期待与您碰撞出智慧的火花！</p>
+			<div class="img">
+				<img src="../static/net/img/1-jiabin.jpg" alt="第一届论坛嘉宾合影">
+				<span>第一届论坛嘉宾合影</span>
+			</div>
+			<div class="img">
+				<img src="../static/net/img/1-xianchang.jpg" alt="第一届论坛现场盛况">
+				<span>第一届论坛现场盛况</span>
+			</div>
+			<div class="purple">
+				<strong>论坛概况</strong>
+				<p>时间：2017年9月17日（16日报到）</p>
+				<p>地点：北京汉华国际饭店（北京市东城区安外西滨河路26号）</p>
+			</div>
+
+			<div class="purple">
+				<strong>论坛亮点</strong>
+				<p>○政府、行业深度参与，权威解读全科相关政策文件</p>
+				<p>○中美高峰对话，展现梅奥顶尖全科医学的实践体系</p>
+				<p>○多学科专家集结，共建全科医生规范化培养</p>
+				<p>○三级医院全科医学优秀案例分享</p>
+				<p>○跨行业交流，社会资本、互联网平台、保险公司、医药健康产业齐聚，共谋全科医学发展方案</p>
+				<p>○基层卫生机构重度发声，直击全科医学发展痛点</p>
+			</div>
+			<div class="purple">
+				<strong>组织架构</strong>
+				<p>指导单位（拟）：国家卫生计生委科教司、国家卫生计生委基层司、中华医学会全科医学分会</p>
+				<p>主办单位：北京大学医学部、惠每医疗集团</p>
+				<p>协办单位：吴阶平基金会家庭医学部、美瑞博诊所</p>
+				<p>支持单位：梅奥医疗集团、高瓴资本集团</p>
+				<p>承办单位：《中国县域卫生》杂志</p>
+
+			</div>
+			<div class="purple">
+				<strong>参会对象</strong>
+				<p>○全科医疗领域相关政府领导</p>
+				<p>○县级公立医院、基层医疗卫生机构、医生集团、实体民营诊所、互联网民营诊所负责人</p>
+				<p>○社会办医机构负责人和投资者</p>
+				<p>○全科医疗解决方案供应商，包括信息化系统、设备、器械、检验、药品及培训机构</p>
+				<p>○医疗健康产业媒体人士及对全科医学发展有兴趣的同仁等</p>
+
+			</div>
+			<div class="purple">
+				<strong>联系人</strong>
+				<p>王  洁，18811157355</p>
+				<p>jwang@huimeihealth.com</p>
+				<p>郭思明，15510610285</p>
+				<p>guosiming@y-lp.cn</p>
+
+			</div>
+			<div class="purple">
+				<strong>注册费用</strong>
+				<p>○1380元/人（含会议费、资料费及午餐；10人以上团体报名可享受8折优惠）；</p>
+				<p>○5000元/人（含以上内容及梅奥嘉宾私享会，30个名额，先到先得！）</p>
+			</div>
+			<div class="img img1">
+				<img src="../static/net/img/meiAo.jpg" alt="">
+			</div>
+		</div>
+
+		</div>
+		<!--<div class="news_title">
+			惠每动态
+		</div>
+		<div class="news_main">
+			<ul>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_AMC.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_eleven.html">惠每AMC智能问诊系统评审会在Mayo Clinic召开</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  中国新年过后, 惠每AMC产品团队飞越太平洋, 来到位于美国中北部的明尼苏达州罗彻斯特市的梅奥医疗集团，与梅奥专家面对面地沟通工作，其中包涵一场惠每AMC 智能问诊系统的专家评审会。梅奥医疗集团特聘临床医生主持本次评审，参加评审会的还有AMC IT开发团队、AMC产品设计团队和AMC护理专家等。会上，惠每医疗高级副总裁...
+					</div>
+					<div class="more_main">
+						<a href="news_eleven.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_a.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_one.html">助力全科医生，惠每医疗与中华医学会全科医学分会签署协议</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  11月11日，由中华医学会、中华医学会全科医学分会主办的2016全科医学大会、中华医学会全科医学分会第十四届学术年会在杭州市浙江省人民大会堂举行，来自国家卫计委、WHO、梅奥医疗集团、全国知名专家学者及1000余名全科医生参加了此次会议。随着国家医改进入到深水区，全科医学的发展也就意味着我们国家的医改推向...
+					</div>
+					<div class="more_main">
+						<a href="news_one.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_b.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_two.html">北医-梅奥，碰撞中国全科医学发展新思路</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  11月8日，由北京大学医学部全科医学学系和美国梅奥医疗集团在华合资公司惠每医疗共同主办的第一届北医-梅奥全科医学论坛在北京大学医学部举行，论坛以发展分级诊疗和基本医疗为主题，从国内外医疗环境、全科医学的核心作用、全科医生与专科医生的配合、全科医学的科研及支持、全科医师培训、全科医生的团队配合六个层面探...
+					</div>
+					<div class="more_main">
+						<a href="news_two.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_c.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_three.html">惠每携手平安，惠及“万家”</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  8月29日，惠每医疗-万家医疗战略合作暨采购仪式在上海平安总部举行。惠每医疗CEO罗如澍、高级副总裁阳红、惠每科技CEO张奇，万家医疗董事长兼CEO范少飞、总经理许志红出席了签约仪式，双方就惠每医疗携梅奥知识体系与平安集团旗下万家医疗建立合作达成共识，万家医疗将通过数字手段对接惠每诊疗知识库，获取近千种疾病...
+					</div>
+					<div class="more_main">
+						<a href="news_three.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_d.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_four.html">梅奥凭什么在全美最佳医院评比中数度夺魁</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  Mayo Clinic被翻译为梅奥，梅约，马约。尽管其品牌被称为“梅奥诊所”，其实是一个以医疗服务为主的，跨区域的，医疗服务集团公司，所以翻译为“梅奥医疗集团”更为准确，以下将简称其为梅奥。梅奥一直是公认的医学和护理界的圣地，被誉为医学诊断的最高法院及医护人员的麦加。其医疗、教育和临床科研均处于美国领先地位...
+					</div>
+					<div class="more_main">
+						<a href="news_four.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/32.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_five.html">惠每签约蓝卡，打造中国连锁诊所新标杆</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  7月29日，惠每医疗-蓝卡健康战略签约暨惠每基础医疗解决方案采购合同签署仪式在惠每医疗举行。惠每医疗CEO罗如澍、高级副总裁阳红、惠每科技CEO张奇，蓝卡健康董事长于浩波、医疗协作中心总监任宇、企业项目部总监刘春红出席了签约仪式，双方就惠每基础诊疗解决方案在蓝卡健康连锁医疗机构内的应用达成了战略共识...
+					</div>
+					<div class="more_main">
+						<a href="news_five.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_f.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_six.html">贵州牵手梅奥在华合资公司，全面落实分级诊疗制度</a>
+					</div>
+					<div class="news_main_rightBottom">
+						   7月8日，贵州省卫生和计划生育委员会正式与惠每医疗(Mayo Clinic在华合资公司)签署战略协议，贵州省卫计委将在各级医疗机构试点使用惠每诊疗知识库、慢病管理系统、云诊所三大诊疗辅助系统，并在高端海外转诊项目上展开合作。根据协议，贵州省卫计委将通过专家访问、人才交流、管理咨询、教育培训等途径，引入梅奥...
+					</div>
+					<div class="more_main">
+						<a href="news_six.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_g.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_seven.html">百年梅奥，值得借鉴的远不止医疗技术</a>
+					</div>
+					<div class="news_main_rightBottom">
+						    6月4日，在第四届健康界峰会上，四位来自Mayo Clinic的大咖引起了众多参会嘉宾的关注，四位大咖分别就Mayo Clinic医疗模式及美国医疗发展趋势、Mayo Clinic在中国的实践、团队协作下的个性化医疗、Mayo Clinic金字塔型医疗模式等问题与中国医疗专家展开了精彩探讨...
+
+					</div>
+					<div class="more_main">
+						<a href="news_seven.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_h.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_eight.html">风从海上来&#45;&#45;惠每医疗CEO罗如澍受邀参加健康界峰会并发表主题演讲</a>
+					</div>
+					<div class="news_main_rightBottom">
+						   6月3日，以“迈进现代医院管理时代”为主题的第四届健康界峰会在上海如期举行，来自全国医疗行业的2000余名专家、学者及行业探索者参与了此次峰会，作为海外医疗经验的传播者，Mayo Clinic高级投资官、惠每医疗CEO罗如澍受邀参加了此次峰会，并发表主题演讲...
+					</div>
+					<div class="more_main">
+						<a href="news_eight.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/8.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_nine.html">Mayo Clinic临床路径中国医学专家审核启动会在惠每医疗举行</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  5月22日，Mayo Clinic临床路径中国医学专家审核启动会在惠每医疗举行，来自北京大学医学部全科医学系的专家和惠每医疗的同事们一起，就如何将Mayo Clinic先进知识体系引入中国，更好地为中国本地医疗服务进行了有效的沟通，并就如何将Mayo Clinic应用几十年的临床路径（AME）系统落地中国基层医疗达成共识...
+					</div>
+					<div class="more_main">
+						<a href="news_nine.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				<li>
+					<div class="news_main_left">
+						<img src="../static/net/img/news_j.jpg"/>
+					</div>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_ten.html">惠每医疗CEO罗如澍出席“创新驱动健康传播”高峰论坛</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  由《生命时报》主办，多家媒体协办的《健康人•中国梦》论坛在人民日报社举行，本次论坛的主题是“创新驱动健康传播”，众多媒体、包括三甲医院的院长在内的医疗知名人士参加了论坛，惠每医疗CEO罗如澍先生作为嘉宾出席了论坛，他分享了Mayo Clinic作为世界顶级医院在健康传播中的经验，并结合中国医疗环境分析了...
+					</div>
+					<div class="more_main">
+						<a href="news_ten.html">more>></a>
+					</div>
+					</div>					
+				</li>
+				
+			</ul>
+		</div>
+		<div class="news_telmain">
+			<ul>
+				<li>
+					
+						<img src="../static/net/img/news_AMC.jpg"/>
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_eleven.html">惠每AMC智能问诊系统评审会在Mayo Clinic召开</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  中国新年过后, 惠每AMC产品团队飞越太平洋, 来到位于美国中北部的明尼苏达州罗彻斯特市的梅奥医疗集团，与梅奥专家面对面地沟通工作，其中包涵一场惠每AMC 智能问诊系统的专家评审会。梅奥医疗集团特聘临床医生主持本次评审，参加评审会的还有AMC IT开发团队、AMC产品设计团队和AMC护理专家等。会上，惠每医疗高级副...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+					
+						<img src="../static/net/img/news_a.jpg"/>
+					
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_one.html">助力全科医生，惠每医疗与中华医学会全科医学分会签署协议</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  11月11日，由中华医学会、中华医学会全科医学分会主办的2016全科医学大会、中华医学会全科医学分会第十四届学术年会在杭州市浙江省人民大会堂举行，来自国家卫计委、WHO、梅奥医疗集团、全国知名专家学者及1000余名全科医生参加了此次会议。随着国家医改进入到深水区，全科医学的发展也就意味着我们国家的医改推向进一步的深度。分级诊疗是目前国家医改...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+					
+						<img src="../static/net/img/news_b.jpg"/>
+				
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_two.html">北医-梅奥，碰撞中国全科医学发展新思路</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  11月8日，由北京大学医学部全科医学学系和美国梅奥医疗集团在华合资公司惠每医疗共同主办的第一届北医-梅奥全科医学论坛在北京大学医学部举行，论坛以发展分级诊疗和基本医疗为主题，从国内外医疗环境、全科医学的核心作用、全科医生与专科医生的配合、全科医学的科研及支持、全科医师培训、全科医生的团队配合六个层面探讨未来全科医学发展之路及切实...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+					
+						<img src="../static/net/img/news_c.jpg"/>
+				
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_three.html">惠每携手平安，惠及“万家”</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  8月29日，惠每医疗-万家医疗战略合作暨采购仪式在上海平安总部举行。惠每医疗CEO罗如澍、高级副总裁阳红、惠每科技CEO张奇，万家医疗董事长兼CEO范少飞、总经理许志红出席了签约仪式，双方就惠每医疗携梅奥知识体系与平安集团旗下万家医疗建立合作达成共识，万家医疗将通过数字手段对接惠每诊疗知识库，获取近千种疾病的辅助诊断与治疗路径...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+				
+						<img src="../static/net/img/news_d.jpg"/>
+				
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_four.html">梅奥凭什么在全美最佳医院评比中数度夺魁</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  Mayo Clinic被翻译为梅奥，梅约，马约。尽管其品牌被称为“梅奥诊所”，其实是一个以医疗服务为主的，跨区域的，医疗服务集团公司，所以翻译为“梅奥医疗集团”更为准确，以下将简称其为梅奥。梅奥一直是公认的医学和护理界的圣地，被誉为医学诊断的最高法院及医护人员的麦加。其医疗、教育和临床科研均处于美国领先地位...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+					
+						<img src="../static/net/img/32.jpg"/>
+					
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_five.html">惠每签约蓝卡，打造中国连锁诊所新标杆</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  7月29日，惠每医疗-蓝卡健康战略签约暨惠每基础医疗解决方案采购合同签署仪式在惠每医疗举行。惠每医疗CEO罗如澍、高级副总裁阳红、惠每科技CEO张奇，蓝卡健康董事长于浩波、医疗协作中心总监任宇、企业项目部总监刘春红出席了签约仪式，双方就惠每基础诊疗解决方案在蓝卡健康连锁医疗机构内的应用达成了战略共识，希望通过本次合作实现优势互补，合作共赢，共同打造中国连锁诊所的行业标杆...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+				
+						<img src="../static/net/img/news_f.jpg"/>
+				
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_six.html">贵州牵手梅奥在华合资公司，全面落实分级诊疗制度</a>
+					</div>
+					<div class="news_main_rightBottom">
+						   7月8日，贵州省卫生和计划生育委员会正式与惠每医疗(Mayo Clinic在华合资公司)签署战略协议，贵州省卫计委将在各级医疗机构试点使用惠每诊疗知识库、慢病管理系统、云诊所三大诊疗辅助系统，并在高端海外转诊项目上展开合作。根据协议，贵州省卫计委将通过专家访问、人才交流、管理咨询、教育培训等途径，引入梅奥医疗知识体系，促进贵州省大健康医药产业发展和转型升级...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+				
+						<img src="../static/net/img/news_g.jpg"/>
+				
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_seven.html">百年梅奥，值得借鉴的远不止医疗技术</a>
+					</div>
+					<div class="news_main_rightBottom">
+						    6月4日，在第四届健康界峰会上，四位来自Mayo Clinic的大咖引起了众多参会嘉宾的关注，四位大咖分别就Mayo Clinic医疗模式及美国医疗发展趋势、Mayo Clinic在中国的实践、团队协作下的个性化医疗、Mayo Clinic金字塔型医疗模式等问题与中国医疗专家展开了精彩探讨...
+
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+					
+						<img src="../static/net/img/news_h.jpg"/>
+				
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_eight.html">风从海上来&#45;&#45;惠每医疗CEO罗如澍受邀参加健康界峰会并发表主题演讲</a>
+					</div>
+					<div class="news_main_rightBottom">
+						   6月3日，以“迈进现代医院管理时代”为主题的第四届健康界峰会在上海如期举行，来自全国医疗行业的2000余名专家、学者及行业探索者参与了此次峰会，作为海外医疗经验的传播者，Mayo Clinic高级投资官、惠每医疗CEO罗如澍受邀参加了此次峰会，并发表主题演讲...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+				
+						<img src="../static/net/img/8.jpg"/>
+				
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_nine.html">Mayo Clinic临床路径中国医学专家审核启动会在惠每医疗举行</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  5月22日，Mayo Clinic临床路径中国医学专家审核启动会在惠每医疗举行，来自北京大学医学部全科医学系的专家和惠每医疗的同事们一起，就如何将Mayo Clinic先进知识体系引入中国，更好地为中国本地医疗服务进行了有效的沟通，并就如何将Mayo Clinic应用几十年的临床路径（AME）系统落地中国基层医疗达成共识...
+					</div>
+					
+					</div>					
+				</li>
+				<li>
+					
+						<img src="../static/net/img/news_j.jpg"/>
+					
+					<div class="news_main_right">
+						<div class="news_main_rightTop">
+						<a href="news_ten.html">惠每医疗CEO罗如澍出席“创新驱动健康传播”高峰论坛</a>
+					</div>
+					<div class="news_main_rightBottom">
+						  由《生命时报》主办，多家媒体协办的《健康人•中国梦》论坛在人民日报社举行，本次论坛的主题是“创新驱动健康传播”，众多媒体、包括三甲医院的院长在内的医疗知名人士参加了论坛，惠每医疗CEO罗如澍先生作为嘉宾出席了论坛，他分享了Mayo Clinic作为世界顶级医院在健康传播中的经验，并结合中国医疗环境分析了Mayo Clinic体系在中国的可行性...
+					</div>
+					
+					</div>					
+				</li>
+				
+			</ul>
+		</div>-->
+		<!DOCTYPE html>
+<html>
+
+	<body>
+		<div class="index_footer">
+			<div class="index_footer_text">
+				<ul class="index_footer_left">
+					<li style="color: white;">惠每医疗</li>
+					<li><img src="../static/net/img/qrcode.png" /></li>
+				</ul>
+				<ul class="index_footer_right">
+					<li style="color: white;">联系我们</li>
+<!--					<li>友情链接-<span style="font-size: 16px;">健康界</span></li>-->
+					<li style="color: white;">企业服务热线：400-000-1885</li>
+					<li style="color: white;">地址：北京市海淀区北太平庄路25号北京豪威大厦501A室</li>
+					<li style="color: white;">邮箱：marketing@huimeihealth.com</li>
+					<li style="color: white;">海外转诊热线：400-691-5199</li>
+					<li style="color: white;">海外转诊邮箱：Mayo@huimeihealth.com</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="ICP">
+			增值电信业务经营许可证 京B2-20170229  京ICP备16039627号
+		</div>
+		<div class="index_telfooter">
+			<div class="index_footer_text" align="center">
+				<!--<ul class="index_footer_left">
+					<li>惠每医疗</li>
+					<li><img src="../static/net/img/qrcode.png" /></li>
+				</ul>-->
+				<ul class="index_footer_right" style="text-align: left;">
+					<li>联系我们</li>
+					<li style="color: white;">企业服务热线：400-000-1885</li>
+					<li>地址：北京市海淀区北太平庄路25号北京豪威大厦501A室</li>
+					<li>邮箱：marketing@huimeihealth.com</li>
+					<li style="color: white;">海外转诊热线：400-691-5199</li>
+					<li>海外转诊邮箱：Mayo@huimeihealth.com</li>
+				</ul>
+				<img src="../static/net/img/qrcode.png" />
+			</div>
+
+		</div>
+		
+		
+		<div class="tel_ICP">
+			<p>增值电信业务经营许可证 京B2-20170229</p>
+			<p>京ICP备16039627号</p> 
+		</div>
+	</body>
+
+</html>
+	</body>
+</html>

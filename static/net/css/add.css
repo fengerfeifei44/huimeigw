@@ -1,0 +1,58 @@
+#meiAo{
+    margin: 0 auto;
+    width: 1000px;
+    font-size: 16px;
+}
+#meiAo .wrapp>p{
+    margin-top: 20px;
+    line-height: 30px;
+
+}
+#meiAo p strong{
+    color: rgb(255, 76, 0);
+
+}
+#meiAo .img {
+    margin-top: 20px;
+    text-align: center;
+}
+#meiAo .img.img1 img{
+
+    width: 500px;
+}
+#meiAo .img span{
+    display: block;
+    margin-top: 10px;
+    color: rgb(136, 136, 136);
+}
+#meiAo .img img{
+    width: 100%;
+}
+#meiAo .purple{
+    margin-top: 30px;
+}
+#meiAo .purple>p{
+    line-height: 30px;
+}
+#meiAo .purple strong{
+    margin: 40px auto;
+    display: block;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    background: rgb(160, 119, 181);
+}
+@media (max-width: 480px){
+    #meiAo{
+        width: inherit;
+    }
+    #meiAo .wrapp{
+        margin: 20px;
+    }
+    #meiAo .img.img1 img{
+
+        width: 100%;
+    }
+}

@@ -1,0 +1,98 @@
+<div class="top-box" id="header">
+    <a href="http://www.huimei.net/"><img class="h-logo" src="../static/temp_files/h_logo.png" alt=""></a>
+    <ul class="h-nav">
+        <li><a href="../www.huimei.net/index.html">首页</a><i class="i-line"></i></li>
+        <li><a href="../www.huimei.net/hm-health.html">惠每医疗集团</a><i class="i-line"></i></li>
+        <li><a href="../www.huimei.net/news.html">新闻中心</a><i class="i-line"></i></li>
+        <li><a href="../www.huimei.net/product_service.html">产品与服务</a><i class="i-line"></i></li>
+        <li class="login_in">
+            <a class="loginbtn">登录</a>
+        </li>
+        <li class="split login_in">|</li>
+        <li  class="login_in">
+            <a class="regbtn">注册</a>
+        </li>
+        <li  class="login_in" style="display: none">
+            <a class="quick" >退出</a>
+        </li>
+    </ul>
+
+</div>
+<div class="window loginpanel" style="display: none">
+    <h3>登录</h3>
+    <a class="closebtn"></a>
+    <form id="loginForm" class="form" method="post">
+        <div class="input-group add-on">
+            <i class="icon icon-s icon-tel"></i><input type="text" name="phone" required="required" placeholder="输入手机号" />
+        </div>
+        <div class="input-group add-on">
+            <i class="icon icon-s icon-lock"></i><input type="password" placeholder="输入6位数字密码" name="password" required="required" />
+        </div>
+        <p class="err-msg"></p>
+        <button type="button" class="button submiter">登&nbsp;&nbsp;录</button>
+        <a class="forreg">没有账号，现在注册</a>
+        <a class="forreg" href="forget_password.html">忘记密码</a>
+    </form>
+</div>
+<div class="window regpanel"  style="display: none;">
+    <h3>注册</h3>
+    <a class="closebtn"></a>
+
+    <form id="regForm" class="form nice-validator n-default" novalidate="novalidate" method="post">
+
+        <div class="wechat">
+            <img src="../static/img/f_ewm_01.png" alt="" />
+            <p>关注微信公众账号</p>
+            <p>第一时间获取惠每医疗资讯</p>
+        </div>
+
+        <div class="input-group add-on">
+            <i class="icon icon-s icon-tel"></i><input type="text" name="phone" placeholder="输入手机号" minlength="11" maxlength="11" />
+            <br/>
+        </div>
+        <div class="input-group code">
+            <input type="text" name="securityCode" placeholder="验证码" minlength="6" maxlength="6" />
+            <button type="button" class="getcode">发送验证码</button>
+        </div>
+        <div class="input-group add-on">
+            <i class="icon icon-s icon-lock"></i><input type="password" name="password" placeholder="请输入6位数字密码" minlength="6" maxlength="12" />
+        </div>
+        <div class="input-group ">
+            <i class="icon icon-s "></i><input type="password" name="repwd" placeholder="请确认6位数字密码" minlength="6" maxlength="12" />
+        </div>
+
+        <div class="input-group add-on mt-l">
+            <i class="icon icon-s icon-user"></i>
+            <input type="text" placeholder="姓名" name="realName" />
+        </div>
+        <div class="input-group add-on">
+            <i class="icon icon-s icon-mail"></i>
+            <input type="text" placeholder="输入邮箱" name="email" />
+        </div>
+        <div class="input-group ">
+            <select name="roleId" id="" placeholder="请选择您的职业">
+                <option value="请选择您的职业">请选择您的职业</option>
+                <option value="1">医生</option>
+                <option value="2">护士</option>
+                <option value="3">医学生</option>
+                <option value="4">医药领域管理者</option>
+                <option value="100">其他</option>
+            </select>
+        </div>
+
+        <div class="favors">
+            <fieldset style="    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;">
+                <legend align="center" style="font-size: 14px;color: #727272">您感兴趣的服务</legend>
+                <input type="checkbox" id="checkbox-7-1" name="favor" value="健康通讯"><label for="checkbox-7-1"><span>Mayo Clinic 健康通讯 </span></label> <br/>
+                <input type="checkbox" id="checkbox-7-2" name="favor" value="转诊信息"><label for="checkbox-7-2"><span>Mayo Clinic 转诊信息  </span></label> <br/>
+                <input type="checkbox" id="checkbox-7-3" name="favor" value="健康资讯"><label for="checkbox-7-3"><span>Mayo Clinic 健康资讯  </span></label> <br/>
+                <input type="checkbox" id="checkbox-7-4" name="favor" value="国际研讨会"><label for="checkbox-7-4"><span>Mayo Clinic 国际研讨会</span></label>
+            </fieldset>
+        </div>
+
+        <button type="submit" class="button submit">注&nbsp;&nbsp;册</button>
+        <a class="forlogin">我有账号，直接登录</a>
+    </form>
+</div>

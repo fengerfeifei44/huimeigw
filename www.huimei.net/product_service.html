@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>产品与服务</title>
+		<link rel="stylesheet" type="text/css" href="../static/net/css/product_service.css" />
+		<link rel="stylesheet" type="text/css" href="../static/net/css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="../static/net/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../static/net/css/reset.css" />
+		<link rel="shortcut icon" href="../static/net/img/favicon.ico" type="image/x-icon" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../static/net/css/nav.css">
+		<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="../static/net/js/tpl.js"></script>-->
+	</head>
+
+	<body>
+		<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">-->
+		<!--<link rel="stylesheet" type="text/css" href="../../static/net/css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/net/css/reset.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../static/net/css/login.css"/>
+		<!--		<link rel="shortcut icon" href="../static/net/img/logotop.ico" /> -->
+		<style type="text/css">
+			.header {
+				height: 40px;
+			}
+			
+			.box {
+				width: 400px;
+				height: 400px;
+				background: yellow;
+				position: absolute;
+				display: none;
+				left: 600px;
+				z-index: 100000;
+				color: ga;
+			}
+			
+			.cover {
+				display: none;
+				background: black;
+				opacity: 0.6;
+				width: 100%;
+				position: absolute;
+			}
+			.input-group select {
+				width: 245px;
+			}
+			.forlogin{
+				padding-left: 69px;
+			}
+			.submiter {
+	background: #3597FF;
+}
+
+.submiter:hover {
+	background: #3B6DA7;
+}
+		</style>
+		<style>
+			<!-- input[type="checkbox"] {
+				display: none;
+			}
+			
+			input[type="checkbox"]+label {
+				cursor: pointer;
+				font-size: 1em;
+			}
+			/* ==================================================================== */
+			/* CHECKBOX TYPE 7 ---------------------------------------------------- */
+			/* ==================================================================== */
+			
+			[id^="checkbox-7-"]+label {
+				background-color: #FFF;
+				padding: 6px 9px 8px 43px;
+				border-radius: 0px;
+				display: inline-block;
+				position: relative;
+				margin-left: 0px;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+				height: 20px;
+				width: 180px;
+				overflow: hidden;
+				font-size: 1em !important;
+				color: #464E50;
+				-webkit-transition: all 0.3s linear, color 0 linear;
+				transition: all 0.3s linear, color 0 linear;
+				margin-top: 4px;
+			}
+			
+			[id^="checkbox-7-"]+label:after {
+				content: ' ';
+				position: absolute;
+				background: #FFF;
+				top: 8px;
+				left: 8px;
+				width: 16px;
+				display: block;
+				font-size: 1em !important;
+				height: 10px;
+				border-radius: 0px;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+				padding: 4px 0px;
+				text-align: center;
+				color: #496F7A;
+				line-height: 10px;
+				vertical-align: middle;
+			}
+			
+			[id^="checkbox-7-"]:checked+label {
+				color: #fff;
+			}
+			
+			[id^="checkbox-7-"]+label>span {
+				position: relative;
+				z-index: 99999;
+				font-family: 'adelle-sans', sans-serif;
+			}
+			
+			[id^="checkbox-7-"]:active+label:after {
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(0, 0, 0, 0.1), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+			}
+			
+			[id^="checkbox-7-"]:checked+label:after {
+				content: '\2715';
+			}
+			
+			[id^="checkbox-7-"]+label:before {
+				content: ' ';
+				position: absolute;
+				background: #6AC6DD;
+				width: 0%;
+				height: 100%;
+				top: 0;
+				-webkit-transition: all 0.3s ease-in;
+				transition: all 0.3s ease-in;
+				left: 0;
+			}
+			
+			[id^="checkbox-7-"]:checked+label:before {
+				content: ' ';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+				top: 0;
+				left: 0;
+			}
+			
+			.valid-err span,
+			span.error {
+				color: #E24A4A;
+				font-size: 12px;
+				display: inline-block;
+				margin-left: 5px;
+				line-height: 27px;
+			}
+			
+			.regpanel {
+				display: none;
+				width: 580px;
+				padding: 50px 70px;
+				margin-left: -315px;
+				margin-top: -250px;
+			}
+			
+			.wechat {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				text-align: right;
+				font-size: 12px;
+				line-height: 18px;
+				color: #727272;
+				z-index: 100;
+			}
+			
+			.favors {
+				position: absolute;
+				right: 0px;
+				bottom: 40px;
+				text-align: left;
+				font-size: 14px;
+				line-height: 18px;
+				color: #727272;
+				z-index: 100;
+			}
+			
+			-->
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="login">
+			<div class="login_main">
+				<p class="xx">登录</p>
+			</div>
+			
+		</div>-->
+		<div class="header" style="height: 80px">
+			<div class="top-box" id="header">
+				<a href="http://www.huimei.net/"><img class="h-logo" src="../static/temp_files/h_logo.png" alt=""></a>
+				<ul class="h-nav">
+					<li><a href="../www.huimei.net/index.html">首页</a><i class="i-line"></i></li>
+					<li><a href="../www.huimei.net/hm-health.html">惠每医疗集团</a><i class="i-line"></i></li>
+					<!--<li><a href="http://www.huimei.com/pages/clinicalpolicy.html"></a><i class="i-line">/</i></li>-->
+					<li><a href="../www.huimei.net/news.html">新闻中心</a><i class="i-line"></i></li>
+					<li class="active"><a href="../www.huimei.net/product_service.html">产品与服务</a><i class="i-line"></i></li>
+					<!--       <li><a href="http://www.huimei.com/pages/aboutUs.html">关于我们</a><i class="i-line">/</i></li>
+                           <li><a href="http://www.huimei.com/pages/contactWe.html">联系我们</a></li>-->
+					<!--<li>&lt;!&ndash;<span class="s-yuan"><i class="glyphicon glyphicon-user i-icon"></i></span>&ndash;&gt;<a class="loginbtn">登录</a><i class="ic-line"></i><a class="regbtn">注册</a></li>-->
+                    <li class="login_in">
+                        <a class="loginbtn">登录</a>
+                    </li>
+                    <li class="split login_in">|</li>
+                    <li  class="login_in">
+                        <a class="regbtn">注册</a>
+                    </li>
+                    <li  class="login_in" style="display: none">
+                        <a class="quick" >退出</a>
+                    </li>
+				</ul>
+
+			</div>
+			<div class="window loginpanel" style="display: none">
+				<h3>登录</h3>
+				<a class="closebtn"></a>
+				<form id="loginForm" class="form" method="post">
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-tel"></i><input type="text" name="phone" required="required" placeholder="输入手机号" />
+					</div>
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-lock"></i><input type="password" placeholder="输入6位数字密码" name="password" required="required" />
+					</div>
+					<p class="err-msg"></p>
+					<button type="button" class="button submiter">登&nbsp;&nbsp;录</button>
+					<a class="forreg">没有账号，现在注册</a>
+					<a class="forreg" href="forget_password.html">忘记密码</a>
+				</form>
+			</div>
+			<div class="window regpanel"  style="display: none;">
+				<h3>注册</h3>
+				<a class="closebtn"></a>
+
+				<form id="regForm" class="form nice-validator n-default" novalidate="novalidate" method="post">
+
+					<div class="wechat">
+						<img src="../static/img/f_ewm_01.png" alt="" />
+						<p>关注微信公众账号</p>
+						<p>第一时间获取惠每医疗资讯</p>
+					</div>
+
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-tel"></i><input type="text" name="phone" placeholder="输入手机号" minlength="11" maxlength="11" />
+						<br/>
+					</div>
+					<div class="input-group code">
+						<input type="text" name="securityCode" placeholder="验证码" minlength="6" maxlength="6" />
+						<button type="button" class="getcode">发送验证码</button>
+					</div>
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-lock"></i><input type="password" name="password" placeholder="请输入6位数字密码" minlength="6" maxlength="12" />
+					</div>
+					<div class="input-group ">
+						<i class="icon icon-s "></i><input type="password" name="repwd" placeholder="请确认6位数字密码" minlength="6" maxlength="12" />
+					</div>
+
+					<div class="input-group add-on mt-l">
+						<i class="icon icon-s icon-user"></i>
+						<input type="text" placeholder="姓名" name="realName" />
+					</div>
+					<div class="input-group add-on">
+						<i class="icon icon-s icon-mail"></i>
+						<input type="text" placeholder="输入邮箱" name="email" />
+					</div>
+					<div class="input-group ">
+						<select name="roleId" id="" placeholder="请选择您的职业">
+							<option value="请选择您的职业">请选择您的职业</option>
+							<option value="1">医生</option>
+							<option value="2">护士</option>
+							<option value="3">医学生</option>
+							<option value="4">医药领域管理者</option>
+							<option value="100">其他</option>
+						</select>
+					</div>
+
+					<div class="favors">
+						<fieldset style="    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;">
+							<legend align="center" style="font-size: 14px;color: #727272">您感兴趣的服务</legend>
+							<input type="checkbox" id="checkbox-7-1" name="favor" value="健康通讯"><label for="checkbox-7-1"><span>Mayo Clinic 健康通讯 </span></label> <br/>
+							<input type="checkbox" id="checkbox-7-2" name="favor" value="转诊信息"><label for="checkbox-7-2"><span>Mayo Clinic 转诊信息  </span></label> <br/>
+							<input type="checkbox" id="checkbox-7-3" name="favor" value="健康资讯"><label for="checkbox-7-3"><span>Mayo Clinic 健康资讯  </span></label> <br/>
+							<input type="checkbox" id="checkbox-7-4" name="favor" value="国际研讨会"><label for="checkbox-7-4"><span>Mayo Clinic 国际研讨会</span></label>
+						</fieldset>
+					</div>
+
+					<button type="submit" class="button submit">注&nbsp;&nbsp;册</button>
+					<a class="forlogin">我有账号，直接登录</a>
+				</form>
+			</div>
+		</div>
+		<!--<div class="headers">
+			<div class="containers">
+				<a href="/index">
+					<div class="logo">
+						
+					</div>
+				</a>
+				<div class="links">
+					<ul>
+						<li>
+							<a class="loginbtn">登录</a>
+						</li>
+						<li class="split">|</li>
+						<li>
+							<a class="regbtn">注册</a>
+						</li>
+						<li>
+							<a class="quick" style="display: none;">退出</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="window loginpanel">
+			<h3>登录</h3>
+			<a class="closebtn"></a>
+			<form id="loginForm" class="form" method="post">
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-tel"></i><input type="text" name="phone" required="required" placeholder="输入手机号" />
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-lock"></i><input type="password" placeholder="输入6位数字密码" name="password" required="required" />
+				</div>
+				<p class="err-msg"></p>
+				<button type="button" class="button submiter">登&nbsp;&nbsp;录</button>
+				<a class="forreg">没有账号，现在注册</a>
+				<a class="forreg" href="forget_password.html">忘记密码</a>
+			</form>
+		</div>
+		<div class="window regpanel">
+			<h3>注册</h3>
+			<a class="closebtn"></a>
+
+			<form id="regForm" class="form"  method="post">
+
+				<div class="wechat">
+					<img src="../static/hm-office/images/pc/qrcode.jpg" alt="" />
+					<p>关注微信公众账号</p>
+					<p>第一时间获取惠每医疗资讯</p>
+				</div>
+
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-tel"></i><input type="text" name="phone" placeholder="输入手机号" minlength="11" maxlength="11" />
+					<br/>
+				</div>
+				<div class="input-group code">
+					<input type="text" name="securityCode" placeholder="验证码" minlength="6" maxlength="6" />
+					<button type="button" class="getcode">发送验证码</button>
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-lock"></i><input type="password" name="password" placeholder="请输入6位数字密码" minlength="6" maxlength="12" />
+				</div>
+				<div class="input-group ">
+					<i class="icon icon-s "></i><input type="password" name="repwd" placeholder="请确认6位数字密码" minlength="6" maxlength="12" />
+				</div>
+
+				<div class="input-group add-on mt-l">
+					<i class="icon icon-s icon-user"></i>
+					<input type="text" placeholder="姓名" name="realName" />
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-mail"></i>
+					<input type="text" placeholder="输入邮箱" name="email" />
+				</div>
+				<div class="input-group ">
+					<select name="roleId" id="" placeholder="请选择您的职业">
+						<option value="请选择您的职业">请选择您的职业</option>
+						<option value="1">医生</option>
+						<option value="2">护士</option>
+						<option value="3">医学生</option>
+						<option value="4">医药领域管理者</option>
+						<option value="100">其他</option>
+					</select>
+				</div>
+
+				<div class="favors">
+					<fieldset>
+						<legend align="center">您感兴趣的服务</legend>
+						<input type="checkbox" id="checkbox-7-1" name="favor" value="健康通讯"><label for="checkbox-7-1"><span>Mayo Clinic 健康通讯 </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-2" name="favor" value="转诊信息"><label for="checkbox-7-2"><span>Mayo Clinic 转诊信息  </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-3" name="favor" value="健康资讯"><label for="checkbox-7-3"><span>Mayo Clinic 健康资讯  </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-4" name="favor" value="国际研讨会"><label for="checkbox-7-4"><span>Mayo Clinic 国际研讨会</span></label>
+					</fieldset>
+				</div>
+
+				<button type="submit" class="button submit">注&nbsp;&nbsp;册</button>
+				<a class="forlogin">我有账号，直接登录</a>
+			</form>
+		</div>-->
+		<div class="index_nav">
+
+			<div class="index_logo">
+				<a href="index.html"><img src="../static/net/img/logo.jpg" alt="惠每医疗 Logo"></a>
+			</div>
+			<ul>
+				<a href="index.html">
+					<li>
+						<p>首页</p>
+					</li>
+				</a>
+				<!--<a href="http://amc.huimei.net/">
+					<li>
+						<p>智能问诊</p>
+					</li>
+				</a>-->
+				<a href="hm-health.html">
+					<li class="a" style="position: relative;">
+						<p>惠每医疗集团</p>
+						<!--<div class="hm_group">
+							<div>集团构架</div>
+							<div>产品与服务</div>
+						</div>-->
+					</li>
+				</a>
+				<a href="news.html">
+					<li>
+						<p>新闻中心</p>
+					</li>
+				</a>
+				<a href="product_service.html">
+					<li>
+						<p>产品与服务</p>
+					</li>
+				</a>
+				<!--<a href="contact.html">
+					<li>
+						<p>联系我们</p>
+					</li>
+				</a>-->
+			</ul>
+		</div>
+		<div class="index_telnav">
+			<div><img src="../static/net/img/logo.jpg" /></div>
+			<div id="list"><img src="../static/net/img/caidan_c.png" /></div>
+		</div>
+		<div class="telnav_list">
+			<ul>
+				<a href="index.html">
+					<li>首页</li>
+				</a>
+				<a href="hm-health.html">
+					<li>惠每医疗集团</li>
+				</a>
+				<a href="news.html">
+					<li>新闻中心</li>
+				</a>
+				<a href="product_service.html">
+					<li>产品与服务</li>
+				</a>
+				<!--<a href="contact.html">
+					<li>联系我们</li>
+				</a>-->
+			</ul>
+		</div>
+	</body>
+	<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#list").click(function() {
+				$(".telnav_list").slideToggle(500)
+
+			})
+		})
+	</script>
+
+
+<script src="../static/net/js/slider.min.js"></script>
+<script src="../static/net/js/combo.select.js"></script>
+<script src="../static/net/js/validator.js"></script>
+<script src="../static/net/js/zh_CN.js"></script>
+<script src="../static/net/js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/net/js/pd.js" type="text/javascript" charset="utf-8"></script>
+</html>
+		<div class="product_nav">
+			<img src="../static/net/img/new-nav.jpg" />
+		</div>
+		<div class="original_negative">
+			<a href="Mayo Clinic.html">
+				<h2>——惠每医疗集团资源——</h2></a>
+			<ul>
+				
+					<li data-href="Mayo Clinic.html" name="AMC">
+						<img src="../static/net/img/h-AMC.png" />
+						<p>智能分诊系统</p>
+						<p>AMC</p>
+					</li>
+				
+				
+					<li data-href="Mayo Clinic.html" name="HIL">
+						<img src="../static/net/img/icon1 .jpg" />
+						<p>疾病知识库</p>
+						<p>HIL</p>
+					</li>
+				
+				
+					<li data-href="Mayo Clinic.html" name="AME">
+						<img src="../static/net/img/h-AME.png" />
+						<p>疾病临床路径</p>
+						<p>AME</p>
+					</li>
+				
+				
+					<li data-href="Mayo Clinic.html" name="PE">
+						<img src="../static/net/img/h-PE.png" />
+						<p>患者教育</p>
+						<p>PE</p>
+					</li>
+				
+					<li data-href="Mayo Clinic.html" name="CME">
+						<img src="../static/net/img/h-HLP.png" />
+						<p>医生继续教育体系</p>
+						<p>CME</p>
+					</li>
+				
+					<li data-href="Mayo Clinic.html" name="HLP">
+						<img src="../static/net/img/icon2 .jpg" />
+						<p>品质提升计划</p>
+						<p>HLP</p>
+					</li>
+				
+					<li class="mchl" data-href="Mayo Clinic.html" name="MCHL">
+						<img src="../static/net/img/health_icon.png" />
+						<p>健康通讯</p>
+						<p>MCHL</p>
+					</li>
+			</ul>
+		</div>
+		<div class="original_telnegative">
+			<a href="Mayo Clinic.html">
+				<h2>——惠每医疗集团资源——</h2></a>
+			<ul class="original_three">
+				<li data-href="Mayo Clinic.html" name="AMC">
+						<img src="../static/net/img/h-AMC.png" />
+						<p>智能分诊系统</p>
+						<p>AMC</p>
+					</li>
+				
+				
+					<li data-href="Mayo Clinic.html" name="HIL">
+						<img src="../static/net/img/icon1 .jpg" />
+						<p>疾病知识库</p>
+						<p>HIL</p>
+					</li>
+				
+				
+					<li data-href="Mayo Clinic.html" name="AME">
+						<img src="../static/net/img/h-AME.png" />
+						<p>疾病临床路径</p>
+						<p>AME</p>
+					</li>
+
+			</ul>
+			<ul class="original_four">
+				<li data-href="Mayo Clinic.html" name="PE">
+						<img src="../static/net/img/h-PE.png" />
+						<p>患者教育</p>
+						<p>PE</p>
+					</li>
+				
+					<li data-href="Mayo Clinic.html" name="CME">
+						<img src="../static/net/img/h-HLP.png" />
+						<p>医生继续教育体系</p>
+						<p>CME</p>
+					</li>
+				
+					<li data-href="Mayo Clinic.html" name="HLP">
+						<img src="../static/net/img/icon2 .jpg" />
+						<p>品质提升计划</p>
+						<p>HLP</p>
+					</li>
+				
+					<li class="mchl" data-href="Mayo Clinic.html" name="MCHL">
+						<img src="../static/net/img/health_icon.png" />
+						<p>健康通讯</p>
+						<p>MCHL</p>
+					</li>
+			</ul>
+		</div>
+		<div style="clear: both;">
+
+		</div>
+		<div class="localization">
+			<a href="hmkj.html">
+				<h2>——惠每科技产品——</h2></a>
+			<ul>
+				
+					<li data-href="hmkj.html" name="LCJC">
+						<img src="../static/net/img/lcjc.png" />
+						<p>临床决策引擎</p>
+					</li>
+				
+			
+					<li data-href="hmkj.html" name="HMY">
+						<img src="../static/net/img/hmy.png" />
+						<p>惠每云诊所系统</p>
+					</li>
+				
+				
+					<li data-href="hmkj.html" name="LSZS">
+						<img src="../static/net/img/lszs.png" />
+						<p>连锁诊所管理平台</p>
+					</li>
+				
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+		<div class="pink">
+			<a href="hmjz.html">
+				<h2>——惠每极致服务——</h2></a>
+			<ul>
+				
+					<li data-href="hmjz.html" name="YCHZ">
+						<img src="../static/net/img/new_acme.png" />
+						<p>远程会诊</p>
+					</li>
+				
+				
+					<li data-href="hmjz.html" name="ZZFW">
+						<img src="../static/net/img/zhuanzhen (2).png" />
+						<p>转诊服务</p>
+					</li>
+				
+				
+					<li data-href="hmjz.html" name="GGTJ">
+						<img src="../static/net/img/tj.png" />
+						<p>高管体检</p>
+					</li>
+				
+					<li data-href="hmjz.html" name="BLPG">
+						<img src="../static/net/img/talk.png" />
+						<p>病历评估</p>
+					</li>
+				
+
+			</ul>
+		</div>
+		<div style="clear: both;"></div>
+		<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	</head>
+
+	<body>
+		<div class="index_footer">
+			<div class="index_footer_text">
+				<ul class="index_footer_left">
+					<li style="color: white;">惠每医疗</li>
+					<li><img src="../static/net/img/qrcode.png" /></li>
+				</ul>
+				<ul class="index_footer_right">
+					<li style="color: white;">联系我们</li>
+<!--					<li>友情链接-<span style="font-size: 16px;">健康界</span></li>-->
+					<li style="color: white;">企业服务热线：400-000-1885</li>
+					<li style="color: white;">地址：北京市海淀区北太平庄路25号北京豪威大厦501A室</li>
+					<li style="color: white;">邮箱：marketing@huimeihealth.com</li>
+					<li style="color: white;">海外转诊热线：400-691-5199</li>
+					<li style="color: white;">海外转诊邮箱：Mayo@huimeihealth.com</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="ICP">
+			增值电信业务经营许可证 京B2-20170229  京ICP备16039627号
+		</div>
+		<div class="index_telfooter">
+			<div class="index_footer_text" align="center">
+				<!--<ul class="index_footer_left">
+					<li>惠每医疗</li>
+					<li><img src="../static/net/img/qrcode.png" /></li>
+				</ul>-->
+				<ul class="index_footer_right" style="text-align: left;">
+					<li>联系我们</li>
+					<li style="color: white;">企业服务热线：400-000-1885</li>
+					<li>地址：北京市海淀区北太平庄路25号北京豪威大厦501A室</li>
+					<li>邮箱：marketing@huimeihealth.com</li>
+					<li style="color: white;">海外转诊热线：400-691-5199</li>
+					<li>海外转诊邮箱：Mayo@huimeihealth.com</li>
+				</ul>
+				<img src="../static/net/img/qrcode.png" />
+			</div>
+
+		</div>
+		
+		
+		<div class="tel_ICP">
+			<p>增值电信业务经营许可证 京B2-20170229</p>
+			<p>京ICP备16039627号</p> 
+		</div>
+	</body>
+
+</html>
+	</body>
+
+	<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/net/js/slider.min.js"></script>
+	<script src="../static/net/js/combo.select.js"></script>
+	<script src="../static/net/js/validator.js"></script>
+	<script src="../static/net/js/zh_CN.js"></script>
+	<script src="../static/net/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/net/js/pd.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(".original_negative ul li").click(function(){
+			var hrefStr = $(this).data("href");
+			var nameStr = $(this).attr("name")
+			window.location.href=hrefStr + "?nameStr="+nameStr;		
+		})
+		$(".original_telnegative ul li").click(function(){
+			var hrefStr = $(this).data("href");
+			var nameStr = $(this).attr("name")
+			window.location.href=hrefStr + "?nameStr="+nameStr;		
+		})
+		$(".localization ul li").click(function(){
+			var hrefStr = $(this).data("href");
+			var nameStr = $(this).attr("name")
+			window.location.href=hrefStr + "?nameStr="+nameStr;		
+		})
+		$(".pink ul li").click(function(){
+			var hrefStr = $(this).data("href");
+			var nameStr = $(this).attr("name")
+			window.location.href=hrefStr + "?nameStr="+nameStr;		
+		})
+	</script>
+</html>

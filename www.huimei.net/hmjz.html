@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>梅奥知识体系</title>
+		<link rel="stylesheet" type="text/css" href="../static/net/css/header.css" />
+		<link rel="stylesheet" type="text/css" href="../static/net/css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="../static/net/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../static/net/css/hmjz.css"/>
+		<!--		<link rel="stylesheet" type="text/css" href="../static/net/css/Mayo manage.css"/>-->
+		<link rel="shortcut icon" href="../static/net/img/favicon.ico" type="image/x-icon" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../static/net/css/nav.css">
+		<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/net/js/tpl.js"></script>
+	</head>
+
+	<body>
+		<!DOCTYPE html> <!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">-->
+		<!--<link rel="stylesheet" type="text/css" href="../../static/net/css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="../../static/net/css/reset.css"/>-->
+		<link rel="stylesheet" type="text/css" href="../static/net/css/login.css"/>
+		<!--		<link rel="shortcut icon" href="../static/net/img/logotop.ico" /> -->
+		<style type="text/css">
+			.header {
+				height: 40px;
+			}
+			
+			.box {
+				width: 400px;
+				height: 400px;
+				background: yellow;
+				position: absolute;
+				display: none;
+				left: 600px;
+				z-index: 100000;
+				color: ga;
+			}
+			
+			.cover {
+				display: none;
+				background: black;
+				opacity: 0.6;
+				width: 100%;
+				position: absolute;
+			}
+			.input-group select {
+				width: 245px;
+			}
+			.forlogin{
+				padding-left: 69px;
+			}
+			.submiter {
+	background: #3597FF;
+}
+
+.submiter:hover {
+	background: #3B6DA7;
+}
+		</style>
+		<style>
+			<!-- input[type="checkbox"] {
+				display: none;
+			}
+			
+			input[type="checkbox"]+label {
+				cursor: pointer;
+				font-size: 1em;
+			}
+			/* ==================================================================== */
+			/* CHECKBOX TYPE 7 ---------------------------------------------------- */
+			/* ==================================================================== */
+			
+			[id^="checkbox-7-"]+label {
+				background-color: #FFF;
+				padding: 6px 9px 8px 43px;
+				border-radius: 0px;
+				display: inline-block;
+				position: relative;
+				margin-left: 0px;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+				height: 20px;
+				width: 180px;
+				overflow: hidden;
+				font-size: 1em !important;
+				color: #464E50;
+				-webkit-transition: all 0.3s linear, color 0 linear;
+				transition: all 0.3s linear, color 0 linear;
+				margin-top: 4px;
+			}
+			
+			[id^="checkbox-7-"]+label:after {
+				content: ' ';
+				position: absolute;
+				background: #FFF;
+				top: 8px;
+				left: 8px;
+				width: 16px;
+				display: block;
+				font-size: 1em !important;
+				height: 10px;
+				border-radius: 0px;
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+				padding: 4px 0px;
+				text-align: center;
+				color: #496F7A;
+				line-height: 10px;
+				vertical-align: middle;
+			}
+			
+			[id^="checkbox-7-"]:checked+label {
+				color: #fff;
+			}
+			
+			[id^="checkbox-7-"]+label>span {
+				position: relative;
+				z-index: 99999;
+				font-family: 'adelle-sans', sans-serif;
+			}
+			
+			[id^="checkbox-7-"]:active+label:after {
+				box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(0, 0, 0, 0.1), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+			}
+			
+			[id^="checkbox-7-"]:checked+label:after {
+				content: '\2715';
+			}
+			
+			[id^="checkbox-7-"]+label:before {
+				content: ' ';
+				position: absolute;
+				background: #6AC6DD;
+				width: 0%;
+				height: 100%;
+				top: 0;
+				-webkit-transition: all 0.3s ease-in;
+				transition: all 0.3s ease-in;
+				left: 0;
+			}
+			
+			[id^="checkbox-7-"]:checked+label:before {
+				content: ' ';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+				top: 0;
+				left: 0;
+			}
+			
+			.valid-err span,
+			span.error {
+				color: #E24A4A;
+				font-size: 12px;
+				display: inline-block;
+				margin-left: 5px;
+				line-height: 27px;
+			}
+			
+			.regpanel {
+				display: none;
+				width: 580px;
+				padding: 50px 70px;
+				margin-left: -315px;
+				margin-top: -250px;
+			}
+			
+			.wechat {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				text-align: right;
+				font-size: 12px;
+				line-height: 18px;
+				color: #727272;
+				z-index: 100;
+			}
+			
+			.favors {
+				position: absolute;
+				right: 0px;
+				bottom: 40px;
+				text-align: left;
+				font-size: 14px;
+				line-height: 18px;
+				color: #727272;
+				z-index: 100;
+			}
+			
+			-->
+		</style>
+	</head>
+
+	<body>
+		<!--<div class="login">
+			<div class="login_main">
+				<p class="xx">登录</p>
+			</div>
+			
+		</div>-->
+		<div class="header" style="height: 80px"></div>
+		<!--<div class="headers">
+			<div class="containers">
+				<a href="/index">
+					<div class="logo">
+						
+					</div>
+				</a>
+				<div class="links">
+					<ul>
+						<li>
+							<a class="loginbtn">登录</a>
+						</li>
+						<li class="split">|</li>
+						<li>
+							<a class="regbtn">注册</a>
+						</li>
+						<li>
+							<a class="quick" style="display: none;">退出</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		<div class="window loginpanel">
+			<h3>登录</h3>
+			<a class="closebtn"></a>
+			<form id="loginForm" class="form" method="post">
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-tel"></i><input type="text" name="phone" required="required" placeholder="输入手机号" />
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-lock"></i><input type="password" placeholder="输入6位数字密码" name="password" required="required" />
+				</div>
+				<p class="err-msg"></p>
+				<button type="button" class="button submiter">登&nbsp;&nbsp;录</button>
+				<a class="forreg">没有账号，现在注册</a>
+				<a class="forreg" href="forget_password.html">忘记密码</a>
+			</form>
+		</div>
+		<div class="window regpanel">
+			<h3>注册</h3>
+			<a class="closebtn"></a>
+
+			<form id="regForm" class="form"  method="post">
+
+				<div class="wechat">
+					<img src="../static/hm-office/images/pc/qrcode.jpg" alt="" />
+					<p>关注微信公众账号</p>
+					<p>第一时间获取惠每医疗资讯</p>
+				</div>
+
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-tel"></i><input type="text" name="phone" placeholder="输入手机号" minlength="11" maxlength="11" />
+					<br/>
+				</div>
+				<div class="input-group code">
+					<input type="text" name="securityCode" placeholder="验证码" minlength="6" maxlength="6" />
+					<button type="button" class="getcode">发送验证码</button>
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-lock"></i><input type="password" name="password" placeholder="请输入6位数字密码" minlength="6" maxlength="12" />
+				</div>
+				<div class="input-group ">
+					<i class="icon icon-s "></i><input type="password" name="repwd" placeholder="请确认6位数字密码" minlength="6" maxlength="12" />
+				</div>
+
+				<div class="input-group add-on mt-l">
+					<i class="icon icon-s icon-user"></i>
+					<input type="text" placeholder="姓名" name="realName" />
+				</div>
+				<div class="input-group add-on">
+					<i class="icon icon-s icon-mail"></i>
+					<input type="text" placeholder="输入邮箱" name="email" />
+				</div>
+				<div class="input-group ">
+					<select name="roleId" id="" placeholder="请选择您的职业">
+						<option value="请选择您的职业">请选择您的职业</option>
+						<option value="1">医生</option>
+						<option value="2">护士</option>
+						<option value="3">医学生</option>
+						<option value="4">医药领域管理者</option>
+						<option value="100">其他</option>
+					</select>
+				</div>
+
+				<div class="favors">
+					<fieldset>
+						<legend align="center">您感兴趣的服务</legend>
+						<input type="checkbox" id="checkbox-7-1" name="favor" value="健康通讯"><label for="checkbox-7-1"><span>Mayo Clinic 健康通讯 </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-2" name="favor" value="转诊信息"><label for="checkbox-7-2"><span>Mayo Clinic 转诊信息  </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-3" name="favor" value="健康资讯"><label for="checkbox-7-3"><span>Mayo Clinic 健康资讯  </span></label> <br/>
+						<input type="checkbox" id="checkbox-7-4" name="favor" value="国际研讨会"><label for="checkbox-7-4"><span>Mayo Clinic 国际研讨会</span></label>
+					</fieldset>
+				</div>
+
+				<button type="submit" class="button submit">注&nbsp;&nbsp;册</button>
+				<a class="forlogin">我有账号，直接登录</a>
+			</form>
+		</div>
+		<div class="index_nav">
+
+			<div class="index_logo">
+				<a href="index.html"><img src="../static/net/img/logo.jpg" alt="惠每医疗 Logo"></a>
+			</div>
+			<ul>
+				<a href="index.html">
+					<li>
+						<p>首页</p>
+					</li>
+				</a>
+				&lt;!&ndash;<a href="http://amc.huimei.net/">
+					<li>
+						<p>智能问诊</p>
+					</li>
+				</a>&ndash;&gt;
+				<a href="hm-health.html">
+					<li class="a" style="position: relative;">
+						<p>惠每医疗集团</p>
+						&lt;!&ndash;<div class="hm_group">
+							<div>集团构架</div>
+							<div>产品与服务</div>
+						</div>&ndash;&gt;
+					</li>
+				</a>
+				<a href="news.html">
+					<li>
+						<p>新闻中心</p>
+					</li>
+				</a>
+				<a href="product_service.html">
+					<li>
+						<p>产品与服务</p>
+					</li>
+				</a>
+				&lt;!&ndash;<a href="contact.html">
+					<li>
+						<p>联系我们</p>
+					</li>
+				</a>&ndash;&gt;
+			</ul>
+		</div>-->
+		<div class="index_telnav">
+			<div><img src="../static/net/img/logo.jpg" /></div>
+			<div id="list"><img src="../static/net/img/caidan_c.png" /></div>
+		</div>
+		<div class="telnav_list">
+			<ul>
+				<a href="index.html">
+					<li>首页</li>
+				</a>
+				<a href="hm-health.html">
+					<li>惠每医疗集团</li>
+				</a>
+				<a href="news.html">
+					<li>新闻中心</li>
+				</a>
+				<a href="product_service.html">
+					<li>产品与服务</li>
+				</a>
+				<!--<a href="contact.html">
+					<li>联系我们</li>
+				</a>-->
+			</ul>
+		</div>
+	</body>
+	<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			$("#list").click(function() {
+				$(".telnav_list").slideToggle(500)
+
+			})
+		})
+	</script>
+
+<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/net/js/slider.min.js"></script>
+<script src="../static/net/js/combo.select.js"></script>
+<script src="../static/net/js/validator.js"></script>
+<script src="../static/net/js/zh_CN.js"></script>
+<script src="../static/net/js/common.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/net/js/pd.js" type="text/javascript" charset="utf-8"></script>
+</html>
+		<div class="clinic_nav marginTop80">
+			<img src="../static/net/img/new-nav.jpg" />
+		</div>
+		<div class="clinic_header">
+			<p>——惠每极致服务——</p>
+			<p></p>
+		</div>
+		<div class="clinic_content">
+			<div class="content_left">
+				<ul>
+					<li class="left_sciencea" style="line-height: 62px;" id="li_YCHZ">
+						<p>远程会诊</p>
+						<!--<p>Science</p>-->
+					</li>
+					<li class="left_scienceb" style="background: white; color: black;line-height: 62px;" id="li_ZZFW">
+						<p>转诊服务</p>
+						<!--<p>Science</p>-->
+					</li>
+
+					<li class="left_sciencec" style="background: white; color: black;line-height: 62px;" id="li_GGTJ">
+						<p>高管体检</p>
+						<!--		<p>ACME</p>-->
+					</li>
+					<li class="left_scienced" style="background: white; color: black;line-height: 62px;" id="li_BLPG">
+						<p>病历评估</p>
+						<!--		<p>ACME</p>-->
+					</li>
+				</ul>
+			</div>
+			<div class="content_right">
+				<div class="science_a" id="YCHZ" name="divName">
+					<p>梅奥转诊办公室在华独家运营“梅奥医学中心”授权的远程会诊（eConsults）服务，打造直通医学检验与诊断的“最高法院”——梅奥的远程在线医疗服务平台，让中国的患者不出国门即可享受梅奥专家对病情的综合评估、分析，得到精准、权威的第二诊疗建议。</p>
+					<h3>哪些患者需要远程会诊</h3>
+					<ul>
+						<li style="list-style: disc;">不能或不宜亲赴海外，但需要国际诊疗意见；</li>
+						<li style="list-style: disc;">希望应用国际诊疗模式，同时降低治疗成本；</li>
+						<li style="list-style: disc;">明确国际诊疗方式，确认是否需要亲历海外就医；</li>
+						<li style="list-style: disc;">需要梅奥医学中心专家协助确诊或提供指导性诊疗意见；</li>
+						<li style="list-style: disc;">希望深入了解海外新药品、临床试验新技术、基因检测、质子治疗、免疫治疗等先进方式，是否适用于个体疾患。</li>
+					</ul>
+					<h3>远程会诊服务内容</h3>
+					<ul>
+						<li style="list-style: disc;">病历资料初步收集，了解患者情况；</li>
+						<li style="list-style: disc;">整理患者详细病历，按照梅奥医学中心要求详细介绍病程发展的总结病历；</li>
+						<li style="list-style: disc;">医学顾问根据病况需要及患者需求总结客户咨询问题；</li>
+						<li style="list-style: disc;">病历资料翻译（中文转英文）；</li>
+						<li style="list-style: disc;">通过梅奥医学中心官方授权的专属账户，呈交患者资料；</li>
+						<li style="list-style: disc;">梅奥医学中心接收患者资料，审核病历， 相关科室专家研究分析病例，出具个案化会诊报告；</li>
+						<li style="list-style: disc;">对远程会诊报告进行翻译（英文转中文）及整理后呈交客户。</li>
+					</ul>
+				</div>
+				<div class="science_b" id="ZZFW" name="divName">
+					<h3>服务内容</h3>
+					<ul>
+						<li style="list-style: disc;">国内前往罗切斯特市（RST）最便捷的机票预定（不包含机票费用）；</li>
+						<li style="list-style: disc;">罗切斯特市（RST）内前往梅奥医学中心最便捷的酒店预定（不包含酒店费用）；</li>
+						<li style="list-style: disc;">明尼阿波利斯机场（MSP）或罗切斯特机场（RST）往返酒店，接送机服务一次；</li>
+						<li style="list-style: disc;">包含梅奥医学中心导医导诊及生活陪同的中文服务，到达梅奥医学中心后累计30小时正常工作时间；</li>
+						<li style="list-style: disc;">患者在梅奥医学中心期间看病资料（包括病历、影像、病理等主要结论性文字）的英文翻译为中文；</li>
+						<li style="list-style: disc;">就诊期间7*24小时国内、美国咨询服务；</li>
+						<li style="list-style: disc;">可能涉及到的梅奥医学中心退费指导；</li>
+						<li style="list-style: disc;">协助患者进行回国后的医生选择；</li>
+						<li style="list-style: disc;">协助患者进行回国后的梅奥医学中心医生对接。</li>
+					</ul>
+				</div>
+				<div class="science_c" id="GGTJ" name="divName">
+					<p>梅奥医学中心的高管健康体检计划（Executive Health Program）由传统诊断医学和预防医学两部分组成。目前已经为世界500强企业中近300家公司服务了超过40年。计划设置的初衷是帮助这些繁忙的CEO和高管们提供个性化的、有序的、具有时间效率的健康体检服务。每年有超过7000名企业CEO、高管和商界领袖参与该计划。
+					</p>
+					<h3>体检特点</h3>
+					<ul>
+						<li style="list-style: disc;">
+							检查方案个性化订制。梅奥医学中心的医生在初次面诊后，为每位客户制定个性化的体检单。
+
+						</li>
+						<li style="list-style: disc;">重医生，轻设备。在体检中，一半时间用来检查，另一半时间里，则会有不同科室的医生为客户做身体器官运转情况及疾病知识的讲解。</li>
+						<li style="list-style: disc;">循序渐进式的检查逻辑。医生会为贵宾先进行体检常规检查，一旦发现显示出任何疾病的数据或指标，再要求贵宾进行下一个层级的筛查，逐层深入。</li>
+						<li style="list-style: disc;">检治一体。如果客户在体检过程中发现任何问题，可当即直接预约各个科室的专家。</li>
+						<li style="list-style: disc;">预测性基因检测服务（PGS）。全外显子测序（WES）、全基因组测序（WGS）、靶向药物基因测试。更有针对性的预防、诊断、治疗疾病。</li>
+					</ul>
+					<h3>产品内容</h3>
+					<ul>
+						<li style="list-style: disc;">国内前往罗切斯特市（RST）最便捷的机票预定（不包含机票费用）</li>
+						<li style="list-style: disc;">罗切斯特市（RST）内前往梅奥医学中心最便捷的酒店预定（不包含酒店费用）</li>
+						<li style="list-style: disc;">明尼阿波利斯机场（MSP）或罗切斯特机场（RST）往返酒店，接送机服务一次</li>
+						<li style="list-style: disc;">包含梅奥医学中心体检及生活陪同的中文服务，到达梅奥医学中心后累计25小时正常工作时间</li>
+						<li style="list-style: disc;">客户在梅奥医学中心期间看病资料（包括病历、影像、病理等主要结论性文字）的英文翻译为中文</li>
+						<li style="list-style: disc;">就诊期间7*24小时国内、美国咨询服务</li>
+						<li style="list-style: disc;">可能涉及到的梅奥医学中心退费指导</li>
+						<li style="list-style: disc;">协助客户进行回国后的医生选择</li>
+						<li style="list-style: disc;">协助客户进行回国后的梅奥医学中心医生对接</li>
+					</ul>
+				</div>
+				<div class="science_d" id="BLPG" name="divName">
+					<p>梅奥医疗团队为患者出具初步诊疗意见，获知梅奥有无更好的治疗方案，为患者下一步是否转诊梅奥提供参考。</p>
+					<h3>病历评估服务内容</h3>
+					<ul>
+						<li style="list-style: disc;">
+							患者中文病历的整理、归纳、总结成病历概述
+						</li>
+						<li style="list-style: disc;">按照梅奥医生的医学名词使用习惯，翻译病历</li>
+						<li style="list-style: disc;">病历资料传输，梅奥医生阅读病历</li>
+						<li style="list-style: disc;">梅奥医生给出书面的病历评估反馈，获知梅奥有无更好的治疗方案及是否接收该病人</li>
+						<li style="list-style: disc;">将病历评估反馈翻译成中文交给患者，预约梅奥转诊</li>
+						<li style="list-style: disc;">患者明确赴梅奥就医时间，获取梅奥出具的官方看病邀请函，及梅奥治疗周期和治疗费用预估</li>
+						<li style="list-style: disc;">免费7×24小时诊前咨询服务</li>
+
+					</ul>
+					<h3>为什么选择病历评估</h3>
+					<ul>
+						<li style="list-style: disc;">由梅奥专科医生就患者病历判断：梅奥是否能为该患者提供更有价值的治疗方案；是否有该患者适用的新药、新技术</li>
+						<li style="list-style: disc;">梅奥会根据您的病历个体化地给予医疗费用预估，让支付透明化</li>
+						<li style="list-style: disc;">梅奥会帮您预估治疗周期，让您合理安排国内工作和生活</li>
+						<li style="list-style: disc;">获得您专属的梅奥患者账户，缩短赴梅奥看病的等待时间</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div style="clear: both;">
+
+		</div>
+		<!DOCTYPE html>
+		<html>
+
+		<head>
+			<meta charset="UTF-8">
+			<title></title>
+		</head>
+		<div style="clear: both;">
+
+		</div>
+		<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	</head>
+
+	<body>
+		<div class="index_footer">
+			<div class="index_footer_text">
+				<ul class="index_footer_left">
+					<li style="color: white;">惠每医疗</li>
+					<li><img src="../static/net/img/qrcode.png" /></li>
+				</ul>
+				<ul class="index_footer_right">
+					<li style="color: white;">联系我们</li>
+<!--					<li>友情链接-<span style="font-size: 16px;">健康界</span></li>-->
+					<li style="color: white;">企业服务热线：400-000-1885</li>
+					<li style="color: white;">地址：北京市海淀区北太平庄路25号北京豪威大厦501A室</li>
+					<li style="color: white;">邮箱：marketing@huimeihealth.com</li>
+					<li style="color: white;">海外转诊热线：400-691-5199</li>
+					<li style="color: white;">海外转诊邮箱：Mayo@huimeihealth.com</li>
+				</ul>
+			</div>
+
+		</div>
+		<div class="ICP">
+			增值电信业务经营许可证 京B2-20170229  京ICP备16039627号
+		</div>
+		<div class="index_telfooter">
+			<div class="index_footer_text" align="center">
+				<!--<ul class="index_footer_left">
+					<li>惠每医疗</li>
+					<li><img src="../static/net/img/qrcode.png" /></li>
+				</ul>-->
+				<ul class="index_footer_right" style="text-align: left;">
+					<li>联系我们</li>
+					<li style="color: white;">企业服务热线：400-000-1885</li>
+					<li>地址：北京市海淀区北太平庄路25号北京豪威大厦501A室</li>
+					<li>邮箱：marketing@huimeihealth.com</li>
+					<li style="color: white;">海外转诊热线：400-691-5199</li>
+					<li>海外转诊邮箱：Mayo@huimeihealth.com</li>
+				</ul>
+				<img src="../static/net/img/qrcode.png" />
+			</div>
+
+		</div>
+		
+		
+		<div class="tel_ICP">
+			<p>增值电信业务经营许可证 京B2-20170229</p>
+			<p>京ICP备16039627号</p> 
+		</div>
+	</body>
+
+</html>
+
+		</html>
+	</body>
+	<script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/net/js/hmjz.js" type="text/javascript" charset="utf-8"></script>
+
+	<script src="../static/net/js/slider.min.js"></script>
+	<script src="../static/net/js/combo.select.js"></script>
+	<script src="../static/net/js/validator.js"></script>
+	<script src="../static/net/js/zh_CN.js"></script>
+	<script src="../static/net/js/common.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../static/net/js/pd.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		$(function() {
+			var nameStr = getUrlParam('nameStr');
+			if(nameStr){
+				$("li").css("background","none");
+				$("li").css("color","black");
+				$("#li_"+nameStr).css("background","rgb(26, 89, 140)");
+				$("#li_"+nameStr).css("color","white");
+				$("[name='divName']").css("display","none");
+				$("#"+nameStr).css("display","block");
+			}
+		})
+		function getUrlParam(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+            var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+            if (r != null) return unescape(r[2]); return null; //返回参数值
+        }
+	</script>
+</html>

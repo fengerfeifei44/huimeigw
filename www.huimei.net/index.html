@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://www.huimei.com/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>惠每医疗－源自梅奥，专业领先的医疗知识库和管理系统</title>
+    <meta name="keywords" content="梅奥，梅奥中国，惠每，惠每医疗，辅助诊断，慢病管理， 诊所管理">
+    <meta name="description" content="惠每医疗（Mayo Clinic在华合资公司），全面引进Mayo Clinic核心服务方案，为医疗机构、医护人员提供各个层面的专业知识、技术体系和管理系统，致力于打造中国最好的医疗健康管理平台。">
+   <!-- <script src="../static/net/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>-->
+
+    <script type="text/javascript" src="../static/temp_files/jquery-1.8.3.min.js"></script>
+    <link rel="icon" href="../static/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://www.huimei.com/assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../static/temp_files/animate.css">
+    <link rel="stylesheet" type="text/css" href="../static/temp_files/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/temp_files/common.css">
+    <link rel="stylesheet" type="text/css" href="../static/temp_files/index.css">
+    <link rel="stylesheet" type="text/css" href="../static/temp_files/totop.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/net/css/index.css" />
+    <link rel="stylesheet" type="text/css" href="../static/net/css/reset.css" />
+     <link rel="stylesheet" type="text/css" href="../static/net/css/footer.css" />
+     <link rel="stylesheet" type="text/css" href="../static/net/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="../static/net/css/swiper-3.3.1.min.css" />
+    <link rel="shortcut icon" href="../static/net/img/favicon.ico" type="image/x-icon" />
+  <!--  <script src="../static/net/js/tpl.js"></script>-->
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+        /*.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+            margin: 45px 5px;
+        }*/
+        .swiper-slide{
+            position: relative;
+        }
+        .swiper-pagination{
+            position: absolute;
+            top:320px;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="../static/net/css/login.css"/>
+    <!--		<link rel="shortcut icon" href="../static/net/img/logotop.ico" /> -->
+    <style type="text/css">
+        .header {
+            height: 40px;
+        }
+
+        .box {
+            width: 400px;
+            height: 400px;
+            background: yellow;
+            position: absolute;
+            display: none;
+            left: 600px;
+            z-index: 100000;
+            color: ga;
+        }
+
+        .cover {
+            display: none;
+            background: black;
+            opacity: 0.6;
+            width: 100%;
+            position: absolute;
+        }
+        .input-group select {
+            width: 245px;
+        }
+        .forlogin{
+            padding-left: 69px;
+        }
+        .submiter {
+            background: #3597FF;
+        }
+
+        .submiter:hover {
+            background: #3B6DA7;
+        }
+    </style>
+    <style>
+        <!-- input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]+label {
+            cursor: pointer;
+            font-size: 1em;
+        }
+        /* ==================================================================== */
+        /* CHECKBOX TYPE 7 ---------------------------------------------------- */
+        /* ==================================================================== */
+
+        [id^="checkbox-7-"]+label {
+            background-color: #FFF;
+            padding: 6px 9px 8px 43px;
+            border-radius: 0px;
+            display: inline-block;
+            position: relative;
+            margin-left: 0px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+            height: 20px;
+            width: 180px;
+            overflow: hidden;
+            font-size: 1em !important;
+            font-weight: normal;
+            color: #464E50;
+            -webkit-transition: all 0.3s linear, color 0 linear;
+            transition: all 0.3s linear, color 0 linear;
+            margin-top: 4px;
+            -webkit-box-sizing: inherit!important;
+            -moz-box-sizing: inherit!important;
+            box-sizing: inherit!important;
+        }
+
+        [id^="checkbox-7-"]+label:after {
+            content: ' ';
+            position: absolute;
+            background: #FFF;
+            top: 8px;
+            left: 8px;
+            width: 16px;
+
+            display: block;
+            font-size: 1em !important;
+            height: 16px;
+            border-radius: 0px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+            padding: 4px 0px;
+            text-align: center;
+            color: #496F7A;
+            line-height: 10px;
+            vertical-align: middle;
+        }
+
+        [id^="checkbox-7-"]:checked+label {
+            color: #fff;
+        }
+
+        [id^="checkbox-7-"]+label>span {
+            position: relative;
+            z-index: 99999;
+            font-family: 'adelle-sans', sans-serif;
+        }
+
+        [id^="checkbox-7-"]:active+label:after {
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(0, 0, 0, 0.1), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+        }
+
+        [id^="checkbox-7-"]:checked+label:after {
+            content: '\2715';
+        }
+
+        [id^="checkbox-7-"]+label:before {
+            content: ' ';
+            position: absolute;
+            background: #6AC6DD;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            left: 0;
+        }
+
+        [id^="checkbox-7-"]:checked+label:before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+            top: 0;
+            left: 0;
+        }
+
+        .valid-err span,
+        span.error {
+            color: #E24A4A;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 5px;
+            line-height: 27px;
+        }
+
+        .regpanel {
+            display: none;
+            width: 580px;
+            padding: 50px 70px;
+            margin-left: -315px;
+            margin-top: -250px;
+        }
+
+        .wechat {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            text-align: right;
+            font-size: 12px;
+            line-height: 18px;
+            color: #727272;
+            z-index: 100;
+        }
+
+        .favors {
+            position: absolute;
+            right: 0px;
+            bottom: 40px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 18px;
+            color: #727272;
+            z-index: 100;
+        }
+
+        -->
+    </style>
+    <!--<style>
+        &lt;!&ndash; input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]+label {
+            cursor: pointer;
+            font-size: 1em;
+        }
+        /* ==================================================================== */
+        /* CHECKBOX TYPE 7 &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; */
+        /* ==================================================================== */
+
+        [id^="checkbox-7-"]+label {
+            background-color: #FFF;
+            padding: 6px 9px 23px 43px;
+            border-radius: 0px;
+            display: inline-block;
+            position: relative;
+            margin-left: 0px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+            height: 20px;
+            width: 180px;
+            overflow: hidden;
+            font-size: 1em !important;
+            color: #464E50;
+            -webkit-transition: all 0.3s linear, color 0 linear;
+            transition: all 0.3s linear, color 0 linear;
+            margin-top: 4px;
+        }
+
+        [id^="checkbox-7-"]+label:after {
+            content: ' ';
+            position: absolute;
+            background: #FFF;
+            top: 8px;
+            left: 8px;
+            width: 16px;
+            display: block;
+            font-size: 1em !important;
+            height: 10px;
+            border-radius: 0px;
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+            padding: 4px 0px;
+            text-align: center;
+            color: #496F7A;
+            line-height: 10px;
+            vertical-align: middle;
+        }
+
+        [id^="checkbox-7-"]:checked+label {
+            color: #fff;
+        }
+
+        [id^="checkbox-7-"]+label>span {
+            position: relative;
+            z-index: 99999;
+            font-family: 'adelle-sans', sans-serif;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        [id^="checkbox-7-"]:active+label:after {
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.6), inset 0 2px 6px rgba(0, 0, 0, 0.1), inset 0 -18px 15px -10px rgba(0, 0, 0, 0.05);
+        }
+
+        [id^="checkbox-7-"]:checked+label:after {
+            content: '\2715';
+        }
+
+        [id^="checkbox-7-"]+label:before {
+            content: ' ';
+            position: absolute;
+            background: #6AC6DD;
+            width: 0%;
+            height: 100%;
+            top: 0;
+            -webkit-transition: all 0.3s ease-in;
+            transition: all 0.3s ease-in;
+            left: 0;
+        }
+
+        [id^="checkbox-7-"]:checked+label:before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+            top: 0;
+            left: 0;
+        }
+
+        .valid-err span,
+        span.error {
+            color: #E24A4A;
+            font-size: 12px;
+            display: inline-block;
+            margin-left: 5px;
+            line-height: 27px;
+        }
+
+        .regpanel {
+            display: none;
+            width: 580px;
+            padding: 50px 70px;
+            margin-left: -315px;
+            margin-top: -250px;
+        }
+
+        .wechat {
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            text-align: right;
+            font-size: 12px;
+            line-height: 18px;
+            color: #727272;
+            z-index: 100;
+        }
+
+        .favors {
+            position: absolute;
+            right: 0px;
+            bottom: 40px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 18px;
+            color: #727272;
+            z-index: 100;
+        }
+        .h-nav>li{
+            margin-right: 74px;
+        }
+
+        &ndash;&gt;
+    </style>-->
+    <link rel="stylesheet" href="../static/net/css/nav.css">
+    <script type="text/javascript">
+        $(function() {
+            $("#list").click(function() {
+                $(".telnav_list").slideToggle(500)
+
+            })
+        })
+    </script>
+    <script src="../static/net/js/slider.min.js"></script>
+    <script src="../static/net/js/combo.select.js"></script>
+    <script src="../static/net/js/validator.js"></script>
+    <script src="../static/net/js/zh_CN.js"></script>
+    <script src="../static/net/js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/net/js/pd.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body class="bodyBox" data-url="index1.html">
+<div class="header" style="height: 80px">
+    <div class="top-box" id="header">
+        <a href="http://www.huimei.net/"><img class="h-logo" src="../static/temp_files/h_logo.png" alt=""></a>
+        <ul class="h-nav">
+            <li class="active"><a href="../www.huimei.net/index.html">首页</a><i class="i-line"></i></li>
+            <li><a href="../www.huimei.net/hm-health.html">惠每医疗集团</a><i class="i-line"></i></li>
+            <!--<li><a href="http://www.huimei.com/pages/clinicalpolicy.html"></a><i class="i-line">/</i></li>-->
+            <li><a href="../www.huimei.net/news.html">新闻中心</a><i class="i-line"></i></li>
+            <li><a href="../www.huimei.net/product_service.html">产品与服务</a><i class="i-line"></i></li>
+            <!--       <li><a href="http://www.huimei.com/pages/aboutUs.html">关于我们</a><i class="i-line">/</i></li>
+                   <li><a href="http://www.huimei.com/pages/contactWe.html">联系我们</a></li>-->
+           <!-- <li>&lt;!&ndash;<span class="s-yuan"><i class="glyphicon glyphicon-user i-icon"></i></span>&ndash;&gt;<a class="loginbtn">登录</a><i class="ic-line"></i><a class="regbtn">注册</a></li>-->
+            <li class="login_in">
+                <a class="loginbtn">登录</a>
+            </li>
+            <li class="split login_in">|</li>
+            <li  class="login_in">
+                <a class="regbtn">注册</a>
+            </li>
+            <li  class="login_in">
+                <a class="quick"  style="display: none">退出</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="window loginpanel" style="display: none">
+        <h3>登录</h3>
+        <a class="closebtn"></a>
+        <form id="loginForm" class="form" method="post">
+            <div class="input-group add-on">
+                <i class="icon icon-s icon-tel"></i><input type="text" name="phone" required="required" placeholder="输入手机号" />
+            </div>
+            <div class="input-group add-on">
+                <i class="icon icon-s icon-lock"></i><input type="password" placeholder="输入6位数字密码" name="password" required="required" />
+            </div>
+            <p class="err-msg"></p>
+            <button type="button" class="button submiter">登&nbsp;&nbsp;录</button>
+            <a class="forreg">没有账号，现在注册</a>
+            <a class="forreg" href="forget_password.html">忘记密码</a>
+        </form>
+    </div>
+    <div class="window regpanel"  style="display: none;width: 730px">
+        <h3>注册</h3>
+        <a class="closebtn"></a>
+
+        <form id="regForm" class="form nice-validator n-default" novalidate="novalidate" method="post">
+
+            <div class="wechat">
+                <img src="../static/img/f_ewm_01.png" alt="" />
+                <p>关注微信公众账号</p>
+                <p>第一时间获取惠每医疗资讯</p>
+            </div>
+
+            <div class="input-group add-on">
+                <i class="icon icon-s icon-tel"></i><input type="text" name="phone" placeholder="输入手机号" minlength="11" maxlength="11" />
+                <br/>
+            </div>
+            <div class="input-group code">
+                <input type="text" name="securityCode" placeholder="验证码" minlength="6" maxlength="6" />
+                <button type="button" class="getcode">发送验证码</button>
+            </div>
+            <div class="input-group add-on">
+                <i class="icon icon-s icon-lock"></i><input type="password" name="password" placeholder="请输入6位数字密码" minlength="6" maxlength="12" />
+            </div>
+            <div class="input-group ">
+                <i class="icon icon-s "></i><input type="password" name="repwd" placeholder="请确认6位数字密码" minlength="6" maxlength="12" />
+            </div>
+
+            <div class="input-group add-on mt-l">
+                <i class="icon icon-s icon-user"></i>
+                <input type="text" placeholder="姓名" name="realName" />
+            </div>
+            <div class="input-group add-on">
+                <i class="icon icon-s icon-mail"></i>
+                <input type="text" placeholder="输入邮箱" name="email" />
+            </div>
+            <div class="input-group ">
+                <select name="roleId" id="" placeholder="请选择您的职业">
+                    <option value="请选择您的职业">请选择您的职业</option>
+                    <option value="1">医生</option>
+                    <option value="2">护士</option>
+                    <option value="3">医学生</option>
+                    <option value="4">医药领域管理者</option>
+                    <option value="100">其他</option>
+                </select>
+            </div>
+
+            <div class="favors">
+                <fieldset style="    border: 1px solid silver;
+    margin: 0 2px;
+    padding: .35em .625em .75em;">
+                    <legend align="center" style="font-size: 14px;color: #727272">您感兴趣的服务</legend>
+                    <input type="checkbox" id="checkbox-7-1" name="favor" value="健康通讯"><label for="checkbox-7-1"><span>Mayo Clinic 健康通讯 </span></label> <br/>
+                    <input type="checkbox" id="checkbox-7-2" name="favor" value="转诊信息"><label for="checkbox-7-2"><span>Mayo Clinic 转诊信息  </span></label> <br/>
+                    <input type="checkbox" id="checkbox-7-3" name="favor" value="健康资讯"><label for="checkbox-7-3"><span>Mayo Clinic 健康资讯  </span></label> <br/>
+                    <input type="checkbox" id="checkbox-7-4" name="favor" value="国际研讨会"><label for="checkbox-7-4"><span>Mayo Clinic 国际研讨会</span></label>
+                </fieldset>
+            </div>
+
+            <button type="submit" class="button submit">注&nbsp;&nbsp;册</button>
+            <a class="forlogin">我有账号，直接登录</a>
+        </form>
+    </div>
+
+</div>
+<div class="main">
+    <!--图片上的蓝线-->
+   <!-- <div class="b-line"></div>-->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="width:100%;background-image: url(../static/net/img/2.png);"></div>
+            <div id="meiA" class="swiper-slide " style="width:100%;background-image: url(../static/net/img/3-lunbo.jpg);cursor: pointer"></div>
+            <div class="swiper-slide" style="width:100%;background-image: url(../static/net/img/2-lunbo.jpg);"></div>
+           <!-- <div class="swiper-slide" style="overflow: hidden;padding: 42px 0">
+                <div style="width:1519px;height:317px;background-image: url(../static/net/img/jt_banner.png) ;background-size:cover;background-position: center"></div>
+            </div>-->
+            <div class="swiper-slide" style="width:100%;background-image: url(../static/net/img/1.png);"></div>
+            <div class="swiper-slide" style="background-image: url(../static/net/img/health-333.png);"></div>
+            <div class="swiper-slide" style="background-image: url(../static/net/img/pyramid.jpg); "></div>
+        </div>
+        <div class="swiper-pagination" style="line-height:0"></div>
+    </div>
+    <!--<div class="b-img"></div>-->
+    <!--content-->
+    <div class="c-f1">
+        <h3 class="w"><a href="http://www.huimei.net/" class="tit-box" target="_blank">惠每医疗集团</a></h3>
+        <p class="w">
+            惠每医疗集团是由美国领先的私立非营利性医疗机构——梅奥医疗集团（Mayo Clinic, 以下简称“梅奥”）与以专注于长期结构性价值投资而著称的投资公司——高瓴资本于2015年联合注资成立的医疗集团公司。
+            <br>
+            惠每医疗集团集医疗投资、管理、咨询、培训为一体,全面引进了梅奥应用于医院/诊所、医生/护士、患者、管理人员等各个层面的先进知识、技术、管理和培训体系，致力于在中国打造健康信息管理、医疗和技术的领先复合型平台，使梅奥的顶尖医疗资源与中国医疗体系的发展需求相结合，实现为医生及患者缔造更优医疗体验的目标，让健康惠及每一个人。
+        </p>
+    </div>
+    <div class="c-f2">
+        <h3>惠每医疗集团业务版块</h3>
+        <ul class="w row ul-f2">
+            <li class="col-lg-6 col-md-12 col-sm-12 col-xs-12 li-f2">
+                <div class="c-tip" id="hmProduct">
+                    <a href="http://www.huimei.com/default.html">
+                        <i class="tip_img01"></i>
+                        <h2>惠每科技</h2>
+                        <p>专业临床决策辅助系统提供者</p>
+                    </a>
+                </div>
+                <div class="ch-line tip-line"></div>
+                <div class="c-con01">
+                    <h2>惠每临床决策辅助系统</h2>
+                    <p>医生临床智能辅助诊疗工具</p>
+                    <a href="http://www.huimei.com/pages/clinicalpolicy.html" class="viewMore" id="viewMore">查看更多</a>
+                    <div class="ch-line"></div>
+                    <ul class="c-ul">
+                        <li class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <h3>智能辅助诊断</h3>
+                                <p>提醒可疑疾病范围，</p>
+                                <p>覆盖多个科室 ，降低漏诊误诊率</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <h3>疾病知识库</h3>
+                                <p>包含病因、临床表现、</p>
+                                <p>并发症、检查、诊断、治疗等内容</p>
+                            </div>
+                        </li>
+                        <li class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <h3>慢病合理用药</h3>
+                                <p>严格按照国内慢病指南标准</p>
+                                <p>智能推荐最佳用药方案</p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <h3>用药审核</h3>
+                                <p>包括药品说明以及相互作用、</p>
+                                <p>禁忌证、人群禁忌的审核</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="col-lg-6 col-md-12 col-sm-12 col-xs-12 li-f2">
+                <div class="c-tip" id="hmBest">
+                    <a href="http://huimeibest.com/" target="_blank">
+                        <i class="tip_img02"></i>
+                        <h2>惠每极致医疗</h2>
+                        <p>梅奥诊疗服务和综合医院管理&amp;咨询</p>
+                    </a>
+                </div>
+                <div class="ch-line tip-line"></div>
+                <div class="c-con02">
+                    <p><a href="http://huimeibest.com/" target="_blank">惠每医院网络</a></p>
+                    <div class="c-line"></div>
+                    <p><a href="http://huimeibest.com/" target="_blank">“直通梅奥”一站式海外就医</a></p>
+                    <div class="c-line"></div>
+                    <p><a href="http://mp.weixin.qq.com/s/06HTAMdgFD1_Y_Uf9tAoiA" target="_blank">金融保险健康服务解决方案</a></p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="c-f3">
+        <h3>惠每医疗集团引入的梅奥资源</h3>
+        <ul class="w row">
+            <li>
+                <a href="Mayo%20Clinic.html?nameStr=AMC" target="_blank">
+                    <img src="../static/temp_files/f1_01.png" alt="">
+                    <p>智能问诊系统AMC</p>
+                </a>
+            </li>
+            <li>
+                <a href="Mayo%20Clinic.html?nameStr=HIL" target="_blank">
+                    <img src="../static/temp_files/f1_02.png" alt="">
+                    <p>疾病知识库HIL</p>
+                </a>
+            </li>
+            <li>
+                <a href="Mayo%20Clinic.html?nameStr=AME" target="_blank">
+                    <img src="../static/temp_files/f1_03.png" alt="">
+                    <p>疾病临床路径AME</p>
+                </a>
+            </li>
+            <li>
+                <a href="Mayo%20Clinic.html?nameStr=PE" target="_blank">
+                    <img src="../static/temp_files/f1_04.png" alt="">
+                    <p>患者教育 PE</p>
+                </a>
+            </li>
+            <li>
+                <a href="Mayo%20Clinic.html?nameStr=CME" target="_blank">
+                    <img src="../static/temp_files/f1_05.png" alt="">
+                    <dd>医生继续教育系统CME</dd>
+                </a>
+            </li>
+            <li>
+                <a href="Mayo%20Clinic.html?nameStr=HLP" target="_blank">
+                    <img src="../static/temp_files/f1_06.png" alt="">
+                    <dd>品质提升计划HLP</dd>
+                </a>
+            </li>
+            <li>
+                <a href="Mayo%20Clinic.html?nameStr=MCHL" target="_blank">
+                    <img src="../static/temp_files/f1_07.png" alt="">
+                    <dd>健康通讯MCHL</dd>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="bottom">
+    <ul class="w row">
+        <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3>惠每医疗集团</h3>
+            <p>企业服务热线： 400-000-1885</p>
+            <p>邮箱：marketing@huimeihealth.com</p>
+            <div class="row">
+					<span class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+						<img src="../static/temp_files/f_ewm_01.png" alt="">
+					</span>
+                <span class="col-lg-9 col-md-8 col-sm-8 col-xs-8 bt-pdleft">
+						<h2>惠每医疗集团</h2>
+						<p>惠每医疗微信服务号</p>
+						<p>打开微信，选择“扫一扫”功能</p>
+						<p>扫描左侧二维码即可关注“惠每医疗”</p>
+					</span>
+            </div>
+        </li>
+        <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3>惠每科技</h3>
+            <p>业务咨询热线： 010-53609970 / 53675618</p>
+            <p>邮 箱：market@huimei.com</p>
+            <div class="row">
+					<span class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+						<img src="../static/temp_files/f_ewm_02.png" alt="">
+					</span>
+                <span class="col-lg-9 col-md-8 col-sm-8 col-xs-8 bt-pdleft">
+						<h2>惠每科技</h2>
+						<p>惠每科技微信订阅号</p>
+						<p>打开微信，选择“扫一扫”功能</p>
+						<p>扫描左侧二维码即可关注“惠每科技”</p>
+					</span>
+            </div>
+        </li>
+        <li class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3>惠每极致医疗</h3>
+            <p>梅奥转诊服务热线：400-691-5199</p>
+            <p>邮箱：mayo@huimeihealth.com</p>
+            <div class="row">
+					<span class="col-lg-3 col-md-4 col-sm-4 col-xs-4">
+						<img src="../static/temp_files/f_ewm_03.png" alt="">
+					</span>
+                <span class="col-lg-9 col-md-8 col-sm-8 col-xs-8 bt-pdleft">
+						<h2>惠每极致医疗</h2>
+						<p>惠每极致医疗订阅号</p>
+						<p>打开微信，选择“扫一扫”功能</p>
+						<p>扫描左侧二维码即可关注“Mayo梅奥转诊办公室”</p>
+					</span>
+            </div>
+        </li>
+    </ul>
+    <div class="copyRight">
+        增值电信业务经营许可证 京B2-20170229 京ICP备16039627号
+    </div>
+</div>
+
+<!---->
+<script type="text/javascript" src="../static/temp_files/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="../static/temp_files/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="../static/temp_files/urls.js"></script>
+<script type="text/javascript" src="../static/temp_files/template.js"></script>
+<script type="text/javascript" src="../static/temp_files/common.js"></script>
+<script type="text/javascript" src="../static/temp_files/index.js"></script><div class="backToTop"><a href="#" class="bds_top"></a><a href="javascript:;" class="bds_advisory" onclick="ysf.open();return false;"></a><a href="javascript:;" class="bds_wechat"></a><a href="javascript:;" class="bds_tqq"></a><div class="QRcode1"></div></div>
+<script src="../static/temp_files/7690cadba94d9dff0115d6783982a9fc.js" defer="" async=""></script>
+<div style="top: 0px; left: 0px; visibility: hidden; position: absolute; width: 1px; height: 1px;"><iframe style="height:0px; width:0px;" src="../static/temp_files/delegate.html"></iframe></div><div class="layer-1" id="YSF-BTN-HOLDER" style="display: none;"><div id="YSF-CUSTOM-ENTRY-1"><img src="../static/temp_files/1.png"></div><span id="YSF-BTN-CIRCLE"></span><div id="YSF-BTN-BUBBLE"><div id="YSF-BTN-CONTENT"></div><span id="YSF-BTN-ARROW"></span><span id="YSF-BTN-CLOSE"></span></div></div></body></html>
+<script src="../static/net/js/swiper-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="../static/net/js/pd.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var mySwiper = new Swiper(".swiper-container", {
+        autoplay: 5e3,
+        loop: !0,
+        autoplayDisableOnInteraction: !1,
+        pagination: ".swiper-pagination",
+        paginationClickable: !0
+    });
+</script>
+<script type="text/javascript">
+    $(function(){
+        var nameStr = getUrlParam('state');
+        if(nameStr==1){
+            $(".loginpanel").css("display","block")
+        }
+    })
+    function getUrlParam(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)"); //构造一个含有目标参数的正则表达式对象
+        var r = window.location.search.substr(1).match(reg);  //匹配目标参数
+        if (r != null) return unescape(r[2]); return null; //返回参数值
+    }
+    $(".bds_wechat").mousemove(function() {
+        $(".backToTop").find(".QRcode1").addClass("wechat1");
+    }).mouseleave(function() {
+        $(".backToTop").find(".wechat1").removeClass("wechat1");
+    });
+    $(".backToTop").find(".bds_tqq").mousemove(function() {
+        $(".backToTop").find(".QRcode1").addClass("QQcode");
+    }).mouseleave(function() {
+        $(".backToTop").find(".QQcode").removeClass("QQcode");
+    });
+    $("#meiA").click(function () {
+        window.location.href="meiAo.html"
+    })
+</script>
